@@ -1,7 +1,7 @@
 package com.eomcs.lang.ex04;
 
-// # 형변환 - 명시적 형변환이 불가능한 경우
-//
+//# 형변환 - 명시적 형변환이 불가능한 경우 
+// 
 public class Exam0950 {
   public static void main(String[] args) {
 
@@ -13,23 +13,25 @@ public class Exam0950 {
 
     // 예) 정수, 부동소수점 ==/==> boolean
     boolean bool;
-    // bool = (boolean) 1; // 컴파일 오류!
+    //    bool = (boolean) 1; // 컴파일 오류!
 
     // 예) 문자열 ==/==> 정수, 부동소수점, 문자, boolean
-    // boolean v1 = (boolean) "true"; // 컴파일 오류!
-    // char v2 = (char) "가"; // 컴파일 오류!
-    // int v3 = (int) "123"; // 컴파일 오류!
-    // float v4 = (int) "3.14f"; // 컴파일 오류!
+    //    boolean v1 = (boolean) "true"; // 컴파일 오류!
+    //    char v2 = (char) "가"; // 컴파일 오류!
+    //    int v3 = (int) "123"; // 컴파일 오류!
+    //    float v4 = (int) "3.14f"; // 컴파일 오류!
+
     // 예) boolean ==/==> 정수
     bool = true;
-    // byte b1 = bool;
-    // short s1 = bool;
-    // int i1 = bool;
-    // long l1 = bool;
-    // char c1 = bool;
+    //    byte b1 = (byte) bool;
+    //    short s1 = (byte) bool;
+    //    int i1 = (byte) bool;
+    //    long l1 = (byte) bool;
+    //    char c1 = (byte) bool;
 
     // 예) bool ==/==> 부동소수점
-    // float f1 = bool;
-    // double d1 = bool;
+    //    float f1 = (byte) bool;
+    //    double d1 = (byte) bool;
+
   }
 }
