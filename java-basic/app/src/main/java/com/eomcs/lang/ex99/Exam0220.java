@@ -1,6 +1,6 @@
 package com.eomcs.lang.ex99;
 
-//# 키보드 입력 받기 - 문자열 한 줄 읽기
+// # 키보드 입력 받기 - 문자열 한 줄 읽기
 //
 public class Exam0220 {
   public static void main(String[] args) {

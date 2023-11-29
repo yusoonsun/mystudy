@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f08df6af-fd89-4bbd-8d7a-76d0940afd12" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../app" beforeDir="false" afterPath="$PROJECT_DIR$/../app" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/bitcamp/myapp/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/bitcamp/myapp/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex05/Exam0520.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex05/Exam0520.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex05/Exam0530.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex05/Exam0530.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex05/Exam0531.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex05/Exam0531.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex06/Exam0141.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex06/Exam0141.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex06/Exam0223.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex06/Exam0223.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex99/Exam0220.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex99/Exam0220.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex99/Exam0240.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex99/Exam0240.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex99/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/eomcs/lang/ex99/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../myapp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../myapp/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

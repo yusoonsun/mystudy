@@ -3,16 +3,14 @@ package com.eomcs.lang.ex99;
 public class Test1 {
 
   public static void main(String[] args) throws Exception {
+    java.io.InputStream in = System.in;
+    java.util.Scanner keyIn = new java.util.Scanner(in);
+    String str = keyIn.nextLine();
+    int b = in.read();
+    System.out.println("===> " + str);
 
-    //File file = new File("test.txt");
-    //OutputStream output = new FileOutputStream(file);
-    //PrintStream output2 = new PrintStream(output);
-
-    //System.out.println("Hello");
-
-    //    밥 a = new 밥(); 
-    //    그릇 b = new 그릇(a);
-    //    b.먹자();
+    // 사용 후 잠그는 것
+    keyIn.close();
   }
 
 }

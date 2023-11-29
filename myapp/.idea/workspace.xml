@@ -12,31 +12,22 @@
       <change afterPath="$PROJECT_DIR$/../../eomcs-java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../git.code-workspace" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../intellij-java-google-style.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.." afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../mystudy2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bitcamp-study" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/saveactions_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/app/src/main/java/bitcamp/myapp/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/app/src/main/resources/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/app/src/test/java/bitcamp/myapp/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/app/src/test/resources/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystudy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex05/Exam0520.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex05/Exam0520.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex05/Exam0530.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex05/Exam0530.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex05/Exam0531.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex05/Exam0531.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex06/Exam0141.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex06/Exam0141.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex06/Exam0223.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex06/Exam0223.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex99/Exam0220.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex99/Exam0220.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex99/Exam0240.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex99/Exam0240.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex99/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/lang/ex99/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/myapp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/myapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/myapp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +71,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bitcamp/git/mystudy/myapp",
-    "settings.editor.selected.configurable": "settings.saveactions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bitcamp/git/mystudy/myapp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.saveactions&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bitcamp.myapp" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="myapp [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>

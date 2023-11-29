@@ -1,6 +1,6 @@
 package com.eomcs.lang.ex06;
 
-//# 흐름 제어문 - switch와 break
+// # 흐름 제어문 - switch와 break
 //
 public class Exam0223 {
   public static void main(String[] args) {
