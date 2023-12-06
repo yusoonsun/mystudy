@@ -7,8 +7,7 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
-
+    id 'java'
     id 'eclipse'
 }
 
@@ -34,10 +33,10 @@ java {
     }
 }
 
-application {
-    // Define the main class for the application.
-    mainClass = 'bitcamp.myapp.App'
-}
+// application {
+//     // Define the main class for the application.
+//     mainClass = 'algorithm.test.App'
+// }
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
@@ -54,15 +53,11 @@ tasks.withType(JavaCompile).configureEach {
 // eclipse 프로젝트 이름을 설정하기(Eclipse로 컴파일 할 때)
 eclipse {
     project {
-        name = "myapp"
+        name = "algorithm-test"
     }
     jdt {
         sourceCompatibility = 17
         targetCompatibility = 17
         javaRuntimeName = "JavaSE-17"
     }
-}
-
-run {
-    standardInput = System.in
 }

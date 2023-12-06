@@ -17,7 +17,7 @@ public class App {
     Score s2 = new Score();
     Score s3 = new Score();
 
-    // - Heap 영역에 생선된 인스턴스의 변수는 레퍼런스를 통해 접근한다.
+    // - Heap 영역에 생성된 인스턴스의 변수는 레퍼런스를 통해 접근한다.
     s1.name = "홍길동";
     s1.kor = 100;
     s1.eng = 90;
