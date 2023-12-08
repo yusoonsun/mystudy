@@ -1,7 +1,7 @@
 package bitcamp.myapp.menu;
 
+import bitcamp.myapp.util.Prompt;
 import bitcamp.myapp.vo.Member;
-import bitcamp.util.Prompt;
 
 public class MemberMenu {
 
@@ -15,8 +15,6 @@ public class MemberMenu {
     this.prompt = prompt;
   }
 
-
-  // 회원 데이터의 등록, 조회, 변경, 삭제하는 기능 구현하는 방법
   void printMenu() {
     System.out.printf("[%s]\n", this.title);
     System.out.println("1. 등록");
@@ -74,7 +72,6 @@ public class MemberMenu {
       this.members = arr;
     }
 
-    // 회원 입출력 항목: 이메일, 이름, 암호, 가입일
     Member member = new Member();
     member.email = this.prompt.input("이메일? ");
     member.name = this.prompt.input("이름? ");
@@ -104,9 +101,9 @@ public class MemberMenu {
     }
 
     Member member = this.members[index];
-    System.out.printf("이메일: %s\n ", member.email);
-    System.out.printf("이름: %s\n ", member.name);
-    System.out.printf("가입일: %s\n ", member.createdDate);
+    System.out.printf("이메일: %s\n", member.email);
+    System.out.printf("이름: %s\n", member.name);
+    System.out.printf("가입일: %s\n", member.createdDate);
   }
 
   void modify() {
@@ -121,7 +118,7 @@ public class MemberMenu {
     Member member = this.members[index];
     member.email = this.prompt.input("이메일(%s)? ", member.email);
     member.name = this.prompt.input("이름(%s)? ", member.name);
-    member.password = this.prompt.input("새암호? ");
+    member.password = this.prompt.input("새 암호? ");
     member.createdDate = this.prompt.input("가입일(%s)? ", member.createdDate);
   }
 

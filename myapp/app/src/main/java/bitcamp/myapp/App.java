@@ -1,7 +1,7 @@
 package bitcamp.myapp;
 
 import bitcamp.myapp.menu.MainMenu;
-import bitcamp.util.Prompt;
+import bitcamp.myapp.util.Prompt;
 
 public class App {
 
@@ -9,6 +9,5 @@ public class App {
     Prompt prompt = new Prompt(System.in);
     new MainMenu(prompt).execute();
     prompt.close();
-
   }
 }

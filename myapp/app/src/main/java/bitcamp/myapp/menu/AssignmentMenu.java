@@ -1,13 +1,10 @@
 package bitcamp.myapp.menu;
 
+import bitcamp.myapp.util.Prompt;
 import bitcamp.myapp.vo.Assignment;
-import bitcamp.util.Prompt;
 
-// Assignment 클래스
 public class AssignmentMenu {
 
-  // 의존 객체(Dependency Object ==> dependency);
-  // - 클래스가 작업을 수행할 때 사용하는 객체
   Prompt prompt;
   String title;
   Assignment[] assignments = new Assignment[3];
@@ -18,7 +15,6 @@ public class AssignmentMenu {
     this.prompt = prompt;
   }
 
-  // printMenu() 메서드를 선언한다.
   void printMenu() {
     System.out.printf("[%s]\n", this.title);
     System.out.println("1. 등록");
@@ -29,15 +25,12 @@ public class AssignmentMenu {
     System.out.println("0. 이전");
   }
 
-  // execute() 메서드를 선언한다.
   void execute() {
     this.printMenu();
-    // while 반복문
-    // Prompt 클래스를 input 한다.
+
     while (true) {
       String input = this.prompt.input("메인/%s> ", this.title);
 
-      // switch 조건문
       switch (input) {
         case "1":
           this.add();
@@ -66,10 +59,10 @@ public class AssignmentMenu {
   }
 
   void add() {
-    System.out.println("과제 등록: ");
+    System.out.println("과제 등록:");
 
     if (this.length == this.assignments.length) {
-//      System.out.println("과제를 더이상 등록할 수 없습니다.");
+      //System.out.println("과제를 더이상 등록할 수 없습니다.");
       int oldSize = this.assignments.length;
       int newSize = oldSize + (oldSize / 2);
 
@@ -78,13 +71,12 @@ public class AssignmentMenu {
       for (int i = 0; i < oldSize; i++) {
         arr[i] = this.assignments[i];
       }
+
       // 새 배열을 가리키도록 배열 레퍼런스를 변경
       this.assignments = arr;
-
-//      return; // 중간에 멈추고 나갈때
     }
 
-    Assignment assignment = new Assignment(); // 레퍼런스 배열
+    Assignment assignment = new Assignment();
     assignment.title = this.prompt.input("과제명? ");
     assignment.content = this.prompt.input("내용? ");
     assignment.deadline = this.prompt.input("제출 마감일? ");
@@ -95,7 +87,7 @@ public class AssignmentMenu {
 
   void list() {
     System.out.println("과제 목록:");
-    System.out.printf("%-20s\t%s\n", "과제명", "제출마감일");
+    System.out.printf("%-20s\t%s\n", "과제", "제출마감일");
 
     for (int i = 0; i < this.length; i++) {
       Assignment assignment = this.assignments[i];
@@ -106,40 +98,37 @@ public class AssignmentMenu {
   void view() {
     System.out.println("과제 조회:");
 
-    // parseInt() String 타입의 숫자를 int 타입으로 변환해준다.
-    int index = this.prompt.inputInt("번호? ");
+    int index = Integer.parseInt(this.prompt.input("번호? "));
     if (index < 0 || index >= this.length) {
       System.out.println("과제 번호가 유효하지 않습니다.");
       return;
     }
 
     Assignment assignment = this.assignments[index];
-    System.out.printf("과제명: %s\n ", assignment.title);
-    System.out.printf("내용: %s\n ", assignment.content);
-    System.out.printf("제출 마감일: %s\n ", assignment.deadline);
-
+    System.out.printf("과제명: %s\n", assignment.title);
+    System.out.printf("내용: %s\n", assignment.content);
+    System.out.printf("제출 마감일: %s\n", assignment.deadline);
   }
 
   void modify() {
     System.out.println("과제 변경:");
 
-    int index = this.prompt.inputInt("번호? ");
+    int index = Integer.parseInt(this.prompt.input("번호? "));
     if (index < 0 || index >= this.length) {
       System.out.println("과제 번호가 유효하지 않습니다.");
       return;
     }
 
     Assignment assignment = this.assignments[index];
-    assignment.title = this.prompt.input(String.format("과제명(%s)? ", assignment.title));
-    assignment.content = this.prompt.input(String.format("내용(%s)? ", assignment.content));
-    assignment.deadline = this.prompt.input(String.format("제출 마감일(%s)? ", assignment.deadline));
-
+    assignment.title = this.prompt.input("과제명(%s)? ", assignment.title);
+    assignment.content = this.prompt.input("내용(%s)? ", assignment.content);
+    assignment.deadline = this.prompt.input("제출 마감일(%s)? ", assignment.deadline);
   }
 
   void delete() {
     System.out.println("과제 삭제:");
 
-    int index = this.prompt.inputInt("번호? ");
+    int index = Integer.parseInt(this.prompt.input("번호? "));
     if (index < 0 || index >= this.length) {
       System.out.println("과제 번호가 유효하지 않습니다.");
       return;
@@ -149,10 +138,7 @@ public class AssignmentMenu {
       this.assignments[i] = this.assignments[i + 1]; // 다음 레퍼런스의 값을 삭제하려는 현재 레퍼런스로 이동
     }
     this.length--;
-    this.assignments[this.length] = null; // length 입력 개수 null 값 초기화
-//    System.gc(); // garbage collector 실행 -> 청소할 일 없음
-//    assignment.title = "";
-//    assignment.content = "";
-//    assignment.deadline = "";
+    this.assignments[this.length] = null;
   }
+
 }

@@ -15,6 +15,10 @@ public class App {
     // 식1) 2 + 3 - 1 * 7 / 3 = ?
     // 식2) 3 * 2 + 7 / 4 - 5 = ?
 
+    // 클래스 변수는 오직 한 개만 존재하기 때문에
+    // 동시에 여러 개의 계산을 진행할 수 없다.
+    // 한 개의 식을 먼저 계산한 후에 다른 식을 순차적으로 계산해야 한다.
+
     // 식1 계산:
     Calculator.plus(2); // + 2
     Calculator.plus(3); // + 2 + 3
@@ -39,3 +43,4 @@ public class App {
     System.out.printf("result = %d\n", Calculator.result);
   }
 }
+

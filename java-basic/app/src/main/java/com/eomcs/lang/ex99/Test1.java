@@ -6,10 +6,8 @@ public class Test1 {
     java.io.InputStream in = System.in;
     java.util.Scanner keyIn = new java.util.Scanner(in);
     String str = keyIn.nextLine();
-    // int b = in.read();
+    int b = in.read();
     System.out.println("===> " + str);
-
-    // 사용 후 잠그는 것
     keyIn.close();
   }
 

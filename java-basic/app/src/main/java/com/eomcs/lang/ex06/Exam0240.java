@@ -1,6 +1,6 @@
 package com.eomcs.lang.ex06;
 
-// # 흐름 제어문 - switch 문법 II
+//# 흐름 제어문 - switch 문법 II
 //
 public class Exam0240 {
 

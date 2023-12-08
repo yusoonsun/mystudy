@@ -1,6 +1,7 @@
 package com.eomcs.oop.ex02.step11;
 
-//0) 낱개 변수 사용
+// 데이터 타입 정의  
+// 1) 클래스 사용전: 낱개 변수 사용
 //
 public class App {
   public static void main(String[] args) {

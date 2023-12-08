@@ -15,5 +15,4 @@ public class Score {
   int math;
   int sum;
   float aver;
-
 }

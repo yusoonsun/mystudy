@@ -25,3 +25,4 @@ public class App {
     System.out.printf("result = %d\n", Calculator.result);
   }
 }
+

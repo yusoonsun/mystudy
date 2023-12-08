@@ -1,4 +1,4 @@
-package bitcamp.util;
+package bitcamp.myapp.util;
 
 import java.io.InputStream;
 import java.util.Scanner;
@@ -12,8 +12,6 @@ public class Prompt {
   }
 
   public String input(String title, Object... args) {
-    // String 스태틱의 format 메서드
-    // 문자열의 형식을 설정
     System.out.printf(String.format(title, args));
     return this.keyIn.nextLine();
   }
