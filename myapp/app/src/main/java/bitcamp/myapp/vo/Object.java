@@ -1,6 +1,6 @@
 package bitcamp.myapp.vo;
 
-public class Board {
+public class Object {
 
   public String title;
   public String content;

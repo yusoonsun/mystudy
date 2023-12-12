@@ -1,4 +1,4 @@
-package bitcamp.myapp.util;
+package bitcamp.util;
 
 import java.io.InputStream;
 import java.util.Scanner;
@@ -13,7 +13,7 @@ public class Prompt {
   }
 
   public String input(String title, Object... args) {
-    System.out.printf(String.format(title, args));
+    System.out.print(String.format(title, args));
     return this.keyIn.nextLine();
   }
 
