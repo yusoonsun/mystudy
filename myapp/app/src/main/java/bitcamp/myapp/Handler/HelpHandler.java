@@ -1,11 +1,9 @@
-package bitcamp.myapp.Handler;
+package bitcamp.myapp.handler;
 
 import bitcamp.menu.Menu;
 import bitcamp.menu.MenuHandler;
 import bitcamp.util.AnsiEscape;
 
-// 메뉴 객체의 사용 규칙에 따라 클래스를 정의한다.
-//
 public class HelpHandler implements MenuHandler {
 
   @Override
@@ -15,3 +13,4 @@ public class HelpHandler implements MenuHandler {
     System.out.println("도움말입니다.");
   }
 }
+

@@ -1,66 +1,67 @@
 package bitcamp.util;
 
-import bitcamp.myapp.vo.Object;
+import java.util.Arrays;
 
-public class ObjectRepository {
+public class ObjectRepository<E> {
 
   private Object[] objects = new Object[3];
   private int length = 0;
 
-  public void add(Object object) {
+  public void add(E object) {
     if (this.length == this.objects.length) {
       int oldSize = this.objects.length;
       int newSize = oldSize + (oldSize >> 1);
 
-      Object[] arr = new Object[newSize];
-      for (int i = 0; i < oldSize; i++) {
-        arr[i] = this.objects[i];
-      }
-
-      this.objects = arr;
+      this.objects = Arrays.copyOf(this.objects, newSize);
     }
     this.objects[this.length++] = object;
   }
 
-  public Object remove(int index) {
+  public E remove(int index) {
     if (index < 0 || index >= this.length) {
       return null;
     }
 
     Object deleted = this.objects[index];
 
-    for (int i = index; i < (this.length - 1); i++) {
-      this.objects[i] = this.objects[i + 1];
-    }
+    System.arraycopy(this.objects, index + 1, this.objects, index, this.length - (index + 1));
+
     this.objects[--this.length] = null;
 
-    return deleted;
+    return (E) deleted;
   }
 
   public Object[] toArray() {
-    Object[] arr = new Object[this.length];
-    for (int i = 0; i < this.length; i++) {
-      arr[i] = this.objects[i];
-    }
-    return arr;
-
+    return Arrays.copyOf(this.objects, this.length);
   }
 
-  public Object get(int index) {
+  public E[] toArray(E[] arr) {
+    if (arr.length >= this.length) {
+      System.arraycopy(this.objects, 0, arr, 0, this.length);
+      return arr;
+    }
+    return (E[]) Arrays.copyOf(this.objects, this.length, arr.getClass());
+  }
+
+  public E get(int index) {
     if (index < 0 || index >= this.length) {
       return null;
     }
-    return this.objects[index];
+    return (E) this.objects[index];
   }
 
-  public Object set(int index, Object object) {
+  public E set(int index, Object object) {
     if (index < 0 || index >= this.length) {
       return null;
     }
+
     Object old = this.objects[index];
     this.objects[index] = object;
 
-    return old;
+    return (E) old;
+  }
+
+  public int size() {
+    return this.length;
   }
 }
-

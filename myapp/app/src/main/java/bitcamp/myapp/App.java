@@ -2,12 +2,29 @@ package bitcamp.myapp;
 
 import bitcamp.menu.MenuGroup;
 import bitcamp.menu.MenuItem;
-import bitcamp.myapp.Handler.Assignment.*;
-import bitcamp.myapp.Handler.Board.*;
-import bitcamp.myapp.Handler.HelpHandler;
-import bitcamp.myapp.Handler.Member.*;
+import bitcamp.myapp.handler.HelpHandler;
+import bitcamp.myapp.handler.assignment.AssignmentAddHandler;
+import bitcamp.myapp.handler.assignment.AssignmentDeleteHandler;
+import bitcamp.myapp.handler.assignment.AssignmentListHandler;
+import bitcamp.myapp.handler.assignment.AssignmentModifyHandler;
+import bitcamp.myapp.handler.assignment.AssignmentViewHandler;
+import bitcamp.myapp.handler.board.BoardAddHandler;
+import bitcamp.myapp.handler.board.BoardDeleteHandler;
+import bitcamp.myapp.handler.board.BoardListHandler;
+import bitcamp.myapp.handler.board.BoardModifyHandler;
+import bitcamp.myapp.handler.board.BoardViewHandler;
+import bitcamp.myapp.handler.member.MemberAddHandler;
+import bitcamp.myapp.handler.member.MemberDeleteHandler;
+import bitcamp.myapp.handler.member.MemberListHandler;
+import bitcamp.myapp.handler.member.MemberModifyHandler;
+import bitcamp.myapp.handler.member.MemberViewHandler;
+import bitcamp.myapp.vo.Assignment;
+import bitcamp.myapp.vo.Board;
+import bitcamp.myapp.vo.Member;
 import bitcamp.util.ObjectRepository;
 import bitcamp.util.Prompt;
+
+import java.util.ArrayList;
 
 public class App {
 
@@ -15,10 +32,10 @@ public class App {
     Prompt prompt = new Prompt(System.in);
     //new MainMenu(prompt).execute();
 
-    AssignmentRepository assignmentRepository = new AssignmentRepository();
-    ObjectRepository boardRepository = new ObjectRepository();
-    ObjectRepository greetingRepository = new ObjectRepository();
-    MemberRepository memberRepository = new MemberRepository();
+    ArrayList<Board> boardRepository = new ArrayList<>();
+    ArrayList<Assignment> assignmentRepository = new ArrayList<>();
+    ArrayList<Member> memberRepository = new ArrayList<>();
+    ArrayList<Board> greetingRepository = new ArrayList<>();
 
     MenuGroup mainMenu = new MenuGroup("메인");
 

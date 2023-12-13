@@ -1,18 +1,22 @@
-package bitcamp.myapp.Handler.Member;
+package bitcamp.myapp.handler.member;
 
 import bitcamp.menu.Menu;
 import bitcamp.menu.MenuHandler;
+import bitcamp.myapp.vo.Board;
 import bitcamp.myapp.vo.Member;
 import bitcamp.util.AnsiEscape;
+import bitcamp.util.ObjectRepository;
 import bitcamp.util.Prompt;
+
+import java.util.ArrayList;
 
 public class MemberAddHandler implements MenuHandler {
 
-  MemberRepository memberRepository;
+  ArrayList<Member> objectRepository;
   Prompt prompt;
 
-  public MemberAddHandler(MemberRepository memberRepository, Prompt prompt) {
-    this.memberRepository = memberRepository;
+  public MemberAddHandler(ArrayList<Member> objectRepository, Prompt prompt) {
+    this.objectRepository = objectRepository;
     this.prompt = prompt;
   }
 
@@ -26,6 +30,6 @@ public class MemberAddHandler implements MenuHandler {
     member.password = this.prompt.input("암호? ");
     member.createdDate = this.prompt.input("가입일? ");
 
-    memberRepository.add(member);
+    this.objectRepository.add(member);
   }
 }
