@@ -6,6 +6,7 @@ public class Exam0310 {
 
   interface ProtocolA {
     void rule0(); // 추상 메서드인 경우 구현하지 않았기 때문에 다중 구현시 중복되더라도 문제가 되지 않는다.
+
     void rule1();
 
     // 구현한 메서드인 경우 다중 구현시 중복되면 문제가 발생하기 때문에 컴파일 오류!
@@ -16,6 +17,7 @@ public class Exam0310 {
 
   interface ProtocolB {
     void rule0(); // 추상 메서드인 경우 구현하지 않았기 때문에 다중 구현시 중복되더라도 문제가 되지 않는다.
+
     void rule2();
 
     // 구현한 메서드인 경우 다중 구현시 중복되면 문제가 발생하기 때문에 컴파일 오류!
@@ -46,10 +48,10 @@ public class Exam0310 {
     // 어차피 인터페이스에서 구현한 default 메서드를 사용하지 않기 때문에
     // 이 경우에는 다중 구현이 가능한다.
     //
-    //    @Override
-    //    public void rule3() {
-    //      System.out.println("ProtocolImpl.rule3()");
-    //    }
+    @Override
+    public void rule3() {
+      System.out.println("ProtocolImpl.rule3()");
+    }
   }
 
   public static void main(String[] args) {
@@ -59,10 +61,5 @@ public class Exam0310 {
     obj.rule3();
   }
 }
-
-
-
-
-
 
 

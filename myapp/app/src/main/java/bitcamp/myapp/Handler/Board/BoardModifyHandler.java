@@ -1,31 +1,24 @@
 package bitcamp.myapp.handler.board;
 
-import bitcamp.menu.Menu;
-import bitcamp.menu.MenuHandler;
+import bitcamp.menu.AbstractMenuHandler;
 import bitcamp.myapp.vo.Board;
-import bitcamp.util.AnsiEscape;
-import bitcamp.util.ObjectRepository;
 import bitcamp.util.Prompt;
-
 import java.util.ArrayList;
 
 // 게시글의 '등록' 메뉴를 선택했을 때 작업을 수행하는 클래스
 // - 반드시 MenuHandler 규칙에 따라 클래스를 작성해야 한다.
 //
-public class BoardModifyHandler implements MenuHandler {
+public class BoardModifyHandler extends AbstractMenuHandler {
 
-  ArrayList<Board> objectRepository;
-  Prompt prompt;
+  private ArrayList<Board> objectRepository;
 
   public BoardModifyHandler(ArrayList<Board> objectRepository, Prompt prompt) {
+    super(prompt);
     this.objectRepository = objectRepository;
-    this.prompt = prompt;
   }
 
   @Override
-  public void action(Menu menu) {
-    System.out.printf(AnsiEscape.ANSI_BOLD + "[%s]\n" + AnsiEscape.ANSI_CLEAR, menu.getTitle());
-
+  protected void action() {
     int index = this.prompt.inputInt("번호? ");
     Board oldBoard = this.objectRepository.get(index);
     if (oldBoard == null) {
@@ -34,10 +27,10 @@ public class BoardModifyHandler implements MenuHandler {
     }
 
     Board board = new Board();
-    board.title = this.prompt.input("제목(%s)? ", oldBoard.title);
-    board.content = this.prompt.input("내용(%s)? ", oldBoard.content);
-    board.writer = this.prompt.input("작성자(%s)? ", oldBoard.writer);
-    board.createdDate = this.prompt.input("작성일(%s)? ", oldBoard.createdDate);
+    board.setTitle(this.prompt.input("제목(%s)? ", oldBoard.getTitle()));
+    board.setContent(this.prompt.input("내용(%s)? ", oldBoard.getContent()));
+    board.setWriter(this.prompt.input("작성자(%s)? ", oldBoard.getWriter()));
+    board.setCreatedDate(oldBoard.getCreatedDate());
 
     this.objectRepository.set(index, board);
   }

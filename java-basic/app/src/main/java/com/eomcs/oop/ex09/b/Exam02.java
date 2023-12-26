@@ -18,6 +18,7 @@ interface MyInterface2 {
   int v5 = 500; // 모두 생략된 상태!
 }
 
+
 // 인터페이스 필드 사용
 public class Exam02 {
   public static void main(String[] args) {
@@ -30,16 +31,13 @@ public class Exam02 {
     System.out.println(MyInterface2.v5);
 
     // 인터페이스 필드는 상수 필드이기 때문에 값을 변경할 수 없다.
-    //        MyInterface2.v1 = 111; // 컴파일 오류!
-    //    MyInterface2.v2 = 222; // 컴파일 오류!
-    //    MyInterface2.v3 = 333; // 컴파일 오류!
-    //    MyInterface2.v4 = 444; // 컴파일 오류!
-    //    MyInterface2.v5 = 555; // 컴파일 오류!
+    // MyInterface2.v1 = 111; // 컴파일 오류!
+    // MyInterface2.v2 = 222; // 컴파일 오류!
+    // MyInterface2.v3 = 333; // 컴파일 오류!
+    // MyInterface2.v4 = 444; // 컴파일 오류!
+    // MyInterface2.v5 = 555; // 컴파일 오류!
   }
 
 }
-
-
-
 
 

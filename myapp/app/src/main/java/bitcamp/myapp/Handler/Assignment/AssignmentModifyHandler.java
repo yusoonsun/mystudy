@@ -1,40 +1,45 @@
 package bitcamp.myapp.handler.assignment;
 
-import bitcamp.menu.Menu;
-import bitcamp.menu.MenuHandler;
+import bitcamp.menu.AbstractMenuHandler;
 import bitcamp.myapp.vo.Assignment;
-import bitcamp.util.AnsiEscape;
-import bitcamp.util.ObjectRepository;
 import bitcamp.util.Prompt;
-
 import java.util.ArrayList;
 
-public class AssignmentModifyHandler implements MenuHandler {
+public class AssignmentModifyHandler extends AbstractMenuHandler {
 
-  ArrayList<Assignment> objectRepository;
-  Prompt prompt;
+  private ArrayList<Assignment> objectRepository;
 
   public AssignmentModifyHandler(ArrayList<Assignment> objectRepository, Prompt prompt) {
+    super(prompt);
     this.objectRepository = objectRepository;
-    this.prompt = prompt;
   }
 
   @Override
-  public void action(Menu menu) {
-    System.out.printf(AnsiEscape.ANSI_BOLD + "[%s]\n" + AnsiEscape.ANSI_CLEAR, menu.getTitle());
+  protected void action() {
+    int index = 0;
+    Assignment old = null;
+    try {
+      index = this.prompt.inputInt("번호? ");
+      old = this.objectRepository.get(index);
+      Assignment assignment = new Assignment();
+      assignment.setTitle(this.prompt.input("과제명(%s)? ", old.getTitle()));
+      assignment.setContent(this.prompt.input("내용(%s)? ", old.getContent()));
+      assignment.setDeadline(this.prompt.inputDate("제출 마감일(%s)? ", old.getDeadline()));
 
-    int index = this.prompt.inputInt("번호? ");
-    Assignment oldAssignment = this.objectRepository.get(index);
-    if (oldAssignment == null) {
+      this.objectRepository.set(index, assignment);
+
+    } catch (NumberFormatException e) {
+      System.out.println("숫자를 입력하세요!");
+
+    } catch (IndexOutOfBoundsException e) {
       System.out.println("과제 번호가 유효하지 않습니다.");
-      return;
+
+    } catch (IllegalArgumentException e) {
+      System.out.println("과제 변경 오류!");
+      System.out.println("다시 시도 하세요.");
+
+    } catch (Exception e) {
+      System.out.println("실행 오류!");
     }
-
-    Assignment assignment = new Assignment();
-    assignment.title = this.prompt.input("과제명(%s)? ", oldAssignment.title);
-    assignment.content = this.prompt.input("내용(%s)? ", oldAssignment.content);
-    assignment.deadline = this.prompt.input("제출 마감일(%s)? ", oldAssignment.deadline);
-
-    this.objectRepository.set(index, assignment);
   }
 }

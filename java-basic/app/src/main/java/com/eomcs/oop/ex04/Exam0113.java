@@ -9,26 +9,30 @@ public class Exam0113 {
     System.out.println(Charset.defaultCharset());
 
     // UTF-8 문자 코드의 바이트 배열을 사용하여 String 인스턴스 초기화시키기.
-    byte[] bytes = {
-        (byte)0x41, // A
-        (byte)0x42, // B
-        (byte)0x43, // C
-        (byte)0x61, // a
-        (byte)0x62, // b
-        (byte)0x63, // c
-        (byte)0x30, // 0
-        (byte)0x31, // 1
-        (byte)0x32, // 2
-        (byte)0x20, // space
-        (byte)0x21, // !
-        (byte)0x23, // #
-        (byte)0x25, // %
-        (byte)0x2b, // +
-        (byte)0xea, (byte)0xb0, (byte)0x80, // 가
-        (byte)0xea, (byte)0xb0, (byte)0x81, // 각
-        (byte)0xeb, (byte)0x98, (byte)0x98, // 똘
-        (byte)0xeb, (byte)0x98, (byte)0xa5  // 똥
+    byte[] bytes = {(byte) 0x41, // A
+        (byte) 0x42, // B
+        (byte) 0x43, // C
+        (byte) 0x61, // a
+        (byte) 0x62, // b
+        (byte) 0x63, // c
+        (byte) 0x30, // 0
+        (byte) 0x31, // 1
+        (byte) 0x32, // 2
+        (byte) 0x20, // space
+        (byte) 0x21, // !
+        (byte) 0x23, // #
+        (byte) 0x25, // %
+        (byte) 0x2b, // +
+        (byte) 0xea, (byte) 0xb0, (byte) 0x80, // 가
+        (byte) 0xea, (byte) 0xb0, (byte) 0x81, // 각
+        (byte) 0xeb, (byte) 0x98, (byte) 0x98, // 똘
+        (byte) 0xeb, (byte) 0x98, (byte) 0xa5 // 똥
     };
+
+    // 0x41=A, 0x42=B, 0x43=C, 0x61=a, 0x62=b, 0x63=c, 0x30=0, 0x31=1, 0x32=2,
+    // 0x20=space, 0x21=!, 0x23=#, 0x25=%, 0x2b=+, 0xea, 0xb0, 0x80=가,
+    // 0xea, 0xb0, 0x81=각, 0xeb, 0x98, 0x98=똘, 0xeb, 0x98, 0xa5=똥
+    // String s1 = new String(byte);
 
     String s1 = new String(bytes);
     System.out.println(s1);
@@ -51,27 +55,13 @@ public class Exam0113 {
     //
     // Windows CLI에서 깨지지 않게 하는 방법?
     // => JVM 실행 옵션에 다음을 추가하라
-    //     -Dfile.encoding=UTF-8
+    // -Dfile.encoding=UTF-8
     // => java -Dfile.encoding=UTF-8 -cp bin/main 클래스명
     // => PowerShell 이 아닌 Command 창에서 실행하라!
-    //    PowerShell 에서는 -Dfile.encoding 옵션을 제대로 처리하지 못한다.
-    //    도트(.)를 분리 문자로 인식한다.
+    // PowerShell 에서는 -Dfile.encoding 옵션을 제대로 처리하지 못한다.
+    // 도트(.)를 분리 문자로 인식한다.
     //
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

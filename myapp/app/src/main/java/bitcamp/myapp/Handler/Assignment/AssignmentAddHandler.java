@@ -1,33 +1,34 @@
 package bitcamp.myapp.handler.assignment;
 
-import bitcamp.menu.Menu;
-import bitcamp.menu.MenuHandler;
+import bitcamp.menu.AbstractMenuHandler;
 import bitcamp.myapp.vo.Assignment;
-import bitcamp.util.AnsiEscape;
-
 import bitcamp.util.Prompt;
-
 import java.util.ArrayList;
 
-public class AssignmentAddHandler implements MenuHandler {
+public class AssignmentAddHandler extends AbstractMenuHandler {
 
-  ArrayList<Assignment> objectRepository;
-  Prompt prompt;
+  private ArrayList<Assignment> objectRepository;
+
 
   public AssignmentAddHandler(ArrayList<Assignment> objectRepository, Prompt prompt) {
+    super(prompt);
     this.objectRepository = objectRepository;
-    this.prompt = prompt;
   }
 
   @Override
-  public void action(Menu menu) {
-    System.out.printf(AnsiEscape.ANSI_BOLD + "[%s]\n" + AnsiEscape.ANSI_CLEAR, menu.getTitle());
+  protected void action() {
 
-    Assignment assignment = new Assignment();
-    assignment.title = this.prompt.input("과제명? ");
-    assignment.content = this.prompt.input("내용? ");
-    assignment.deadline = this.prompt.input("제출 마감일? ");
+    try {
+      Assignment assignment = new Assignment();
+      assignment.setTitle(this.prompt.input("과제명? "));
+      assignment.setContent(this.prompt.input("내용? "));
+      assignment.setDeadline(this.prompt.inputDate("제출 마감일?(예: 2023-12-25) "));
 
-    this.objectRepository.add(assignment);
+      this.objectRepository.add(assignment);
+
+    } catch (Exception e) {
+      System.out.println("과제 입력 중 오류 발생!");
+      System.out.println("다시 시도하시기 바랍니다.");
+    }
   }
 }

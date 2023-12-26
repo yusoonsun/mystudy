@@ -14,10 +14,3 @@ public class Score {
     this.aver = this.sum / 3f;
   }
 }
-
-
-
-
-
-
-
