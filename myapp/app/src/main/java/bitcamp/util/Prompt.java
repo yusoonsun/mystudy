@@ -19,7 +19,7 @@ public class Prompt {
   }
 
   public int inputInt(String title, Object... args) {
-      return Integer.parseInt(this.input(title, args));
+    return Integer.parseInt(this.input(title, args));
   }
 
   public float inputFloat(String title, Object... args) {

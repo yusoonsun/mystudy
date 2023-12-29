@@ -2,25 +2,23 @@ package bitcamp.myapp.handler.assignment;
 
 import bitcamp.menu.AbstractMenuHandler;
 import bitcamp.myapp.vo.Assignment;
+import bitcamp.util.List;
 import bitcamp.util.Prompt;
-import java.util.ArrayList;
 
 public class AssignmentModifyHandler extends AbstractMenuHandler {
 
-  private ArrayList<Assignment> objectRepository;
+  private List<Assignment> objectRepository;
 
-  public AssignmentModifyHandler(ArrayList<Assignment> objectRepository, Prompt prompt) {
+  public AssignmentModifyHandler(List<Assignment> objectRepository, Prompt prompt) {
     super(prompt);
     this.objectRepository = objectRepository;
   }
 
   @Override
   protected void action() {
-    int index = 0;
-    Assignment old = null;
     try {
-      index = this.prompt.inputInt("번호? ");
-      old = this.objectRepository.get(index);
+      int index = this.prompt.inputInt("번호? ");
+      Assignment old = this.objectRepository.get(index);
       Assignment assignment = new Assignment();
       assignment.setTitle(this.prompt.input("과제명(%s)? ", old.getTitle()));
       assignment.setContent(this.prompt.input("내용(%s)? ", old.getContent()));
@@ -41,5 +39,6 @@ public class AssignmentModifyHandler extends AbstractMenuHandler {
     } catch (Exception e) {
       System.out.println("실행 오류!");
     }
+
   }
 }

@@ -30,7 +30,7 @@ dependencies {
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
@@ -57,13 +57,13 @@ eclipse {
     }
     // java development toolkit
     jdt {
-        sourceCompatibility = 17
-        targetCompatibility = 17
-        javaRuntimeName = "JavaSE-17"
+        sourceCompatibility = 21
+        targetCompatibility = 21
+        javaRuntimeName = "JavaSE-21"
     }
 
     // Gradle 로 애플리케이션을 실행했을 때
-    // 키보드 입력을 표준 입력 스트림으로 연결하는 ㅏㅇ법
+    // 키보드 입력을 표준 입력 스트림으로 연결하는 방법
     run {
         standardInput = System.in
     }
