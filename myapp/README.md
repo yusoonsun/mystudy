@@ -334,21 +334,27 @@
   - BufferedOutputStream, DataOutputStream, FileOutputStream
 - Java I/O Stream API로 대체하기
 
-
-
-
-
-
-## 32. 인스턴스를 통째로 입출력하기(객체 직렬화)
+## 35. 인스턴스를 통째로 입출력하기(객체 직렬화)
 
 - ObjectInputStream/ObjectOutputStream 사용법
   - java.io.Serializable 인터페이스 사용법
   - transient modifier 사용법
 
-## 33. character stream API를 사용하여 CSV 텍스트 형식으로 입출력하기
+## 36. 리팩토링 - 중복 코드 정리
+
+- 데이터 읽고 쓰는 중복 코드 정리
+- serialVersionUID 스태틱 필드 사용하기
+
+## 37. character I/O stream API를 사용하여 CSV 텍스트 형식으로 입출력하기
 
 - CSV 형식으로 데이터를 읽고 쓰는 법
 - FileReader/FileWriter 사용법
+
+
+
+
+
+
 
 ## 34. 리팩토링: Factory Method 패턴(GoF), Information Expert 패턴(GRASP)
 
