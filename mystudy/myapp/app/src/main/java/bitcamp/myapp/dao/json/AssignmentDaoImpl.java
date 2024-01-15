@@ -1,9 +1,7 @@
 package bitcamp.myapp.dao.json;
 
-import bitcamp.myapp.dao.AbstractDao;
 import bitcamp.myapp.dao.AssignmentDao;
 import bitcamp.myapp.vo.Assignment;
-
 import java.util.List;
 
 public class AssignmentDaoImpl extends AbstractDao<Assignment> implements AssignmentDao {
@@ -19,7 +17,7 @@ public class AssignmentDaoImpl extends AbstractDao<Assignment> implements Assign
   @Override
   public void add(Assignment assignment) {
     assignment.setNo(++lastKey);
-    this.list.add(assignment);
+    list.add(assignment);
     saveData();
   }
 
@@ -37,7 +35,7 @@ public class AssignmentDaoImpl extends AbstractDao<Assignment> implements Assign
 
   @Override
   public List<Assignment> findAll() {
-    return this.list.subList(0, list.size());
+    return list.subList(0, list.size());
   }
 
   @Override
@@ -46,6 +44,7 @@ public class AssignmentDaoImpl extends AbstractDao<Assignment> implements Assign
     if (index == -1) {
       return null;
     }
+
     return list.get(index);
   }
 
@@ -55,17 +54,19 @@ public class AssignmentDaoImpl extends AbstractDao<Assignment> implements Assign
     if (index == -1) {
       return 0;
     }
+
     list.set(index, assignment);
     saveData();
     return 1;
   }
-
+  
   private int indexOf(int no) {
     for (int i = 0; i < list.size(); i++) {
       if (list.get(i).getNo() == no) {
         return i;
       }
     }
+
     return -1;
   }
 }

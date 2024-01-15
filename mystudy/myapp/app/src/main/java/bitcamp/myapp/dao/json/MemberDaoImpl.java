@@ -1,9 +1,7 @@
 package bitcamp.myapp.dao.json;
 
-import bitcamp.myapp.dao.AbstractDao;
 import bitcamp.myapp.dao.MemberDao;
 import bitcamp.myapp.vo.Member;
-
 import java.util.List;
 
 public class MemberDaoImpl extends AbstractDao<Member> implements MemberDao {
@@ -59,7 +57,7 @@ public class MemberDaoImpl extends AbstractDao<Member> implements MemberDao {
     saveData();
     return 1;
   }
-
+  
   private int indexOf(int no) {
     for (int i = 0; i < list.size(); i++) {
       if (list.get(i).getNo() == no) {
