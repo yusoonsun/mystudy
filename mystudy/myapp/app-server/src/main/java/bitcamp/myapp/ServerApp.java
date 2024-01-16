@@ -53,14 +53,12 @@ public class ServerApp {
   void service(Socket socket) {
 
     try (Socket s = socket;
-        DataInputStream in = new DataInputStream(socket.getInputStream());
-        DataOutputStream out = new DataOutputStream(socket.getOutputStream())) {
+         DataInputStream in = new DataInputStream(socket.getInputStream());
+         DataOutputStream out = new DataOutputStream(socket.getOutputStream())) {
 
       System.out.println("클라이언트와 연결됨!");
 
-      while (processRequest(in, out) != -1) {
-        System.out.println("----------------------------");
-      }
+      processRequest(in, out);
 
       System.out.println("클라이언트 연결 종료!");
 
@@ -69,14 +67,10 @@ public class ServerApp {
     }
   }
 
-  int processRequest(DataInputStream in, DataOutputStream out) throws IOException {
+  void processRequest(DataInputStream in, DataOutputStream out) throws IOException {
 
     System.out.println("[클라이언트 요청]");
     String dataName = in.readUTF();
-    if (dataName.equals("quit")) {
-      out.writeUTF("Goodbye!");
-      return -1;
-    }
     String command = in.readUTF();
     String value = in.readUTF();
 
@@ -110,7 +104,6 @@ public class ServerApp {
       out.writeUTF("500");
       out.writeUTF(gson.toJson(e.getMessage()));
     }
-    return 0;
   }
 
   Method findMethod(Class<?> clazz, String name) {
