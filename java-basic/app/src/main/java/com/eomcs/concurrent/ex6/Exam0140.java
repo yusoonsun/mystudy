@@ -61,8 +61,9 @@ public class Exam0140 {
             }
 
             if (count == -1) {
-
+              return;
             }
+
             System.out.println("카운트 시작!");
             for (int i = count; i > 0; i--) {
               System.out.println("==> " + i);
@@ -82,10 +83,12 @@ public class Exam0140 {
     while (true) {
       System.out.print("카운트? ");
       String str = keyScan.nextLine();
+
       if (str.equals("quit")) {
-        t.setCount(-1); // thread를 종료하도록 count를 -1로 설정한다.
+        t.setCount(-1); // 스레드를 종료하도록 count를 -1로 설정한다.
         break;
       }
+
       t.setCount(Integer.parseInt(str));
       // setCount()
       // - 사용자가 입력한 카운트 값을 설정할 때

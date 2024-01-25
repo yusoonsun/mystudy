@@ -2,12 +2,13 @@
 package com.eomcs.concurrent.ex5;
 
 public class Exam0420 {
-  public static void main(String[]args) {
+  public static void main(String[] args) {
     Worker w1 = new Worker("홍길동");
     Worker w2 = new Worker("임꺽정");
 
     w1.start();
     w2.start();
+
   }
 
   synchronized static void play(String threadName) throws Exception {
@@ -24,7 +25,7 @@ public class Exam0420 {
     public void run() {
       try {
         play(getName());
-      } catch(Exception e) {
+      } catch (Exception e) {
         e.printStackTrace();
       }
     }

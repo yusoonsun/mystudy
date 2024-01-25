@@ -43,9 +43,8 @@ public class Exam0220 {
 
       delay();  // CPU를 뺏길 기회를 제공
 
-      if (b < 0) {
+      if (b < 0)
         return 0;
-      }
 
       delay();  // CPU를 뺏길 기회를 제공
 
@@ -59,9 +58,7 @@ public class Exam0220 {
     private void delay() {
       int delayCount = (int)(Math.random() * 1000);
       for (int i = 0; i < delayCount; i++)
-      {
         Math.asin(45.765); // CPU를 뺏길 기회를 제공
-      }
     }
   }
 
@@ -80,9 +77,8 @@ public class Exam0220 {
 
       while (true) {
         money = account.withdraw(100);
-        if (money <= 0) {
+        if (money <= 0)
           break;
-        }
         sum += money;
       }
       System.out.printf("%s에서 찾은 돈: %d원\n", this.getName(), sum);

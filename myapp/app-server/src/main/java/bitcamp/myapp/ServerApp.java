@@ -4,6 +4,9 @@ import bitcamp.RequestException;
 import bitcamp.myapp.dao.json.AssignmentDaoImpl;
 import bitcamp.myapp.dao.json.BoardDaoImpl;
 import bitcamp.myapp.dao.json.MemberDaoImpl;
+import bitcamp.util.ThreadPool;
+import bitcamp.util.Worker;
+import bitcamp.util.WorkerThread;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.DataInputStream;
@@ -17,6 +20,7 @@ import java.util.HashMap;
 
 public class ServerApp {
 
+  ThreadPool threadPool = new ThreadPool(5);
   HashMap<String, Object> daoMap = new HashMap<>();
   Gson gson;
 
@@ -41,8 +45,13 @@ public class ServerApp {
       System.out.println("서버 실행!");
 
       while (true) {
-        service(serverSocket.accept());
-      }
+        // 기존 방식: main 스레드에서 실행
+        // service(serverSocket.accept());
+
+        // 개선: main 스레드에서 분리하여 실행
+        Socket socket = serverSocket.accept();
+        threadPool.get().setWorker(() -> service(socket));
+        }
 
     } catch (Exception e) {
       System.out.println("통신 오류!");
@@ -56,14 +65,14 @@ public class ServerApp {
          DataInputStream in = new DataInputStream(socket.getInputStream());
          DataOutputStream out = new DataOutputStream(socket.getOutputStream())) {
 
-      System.out.println("클라이언트와 연결됨!");
+      System.out.printf("[%s] 클라이언트와 연결됨!\n", Thread.currentThread().getName());
 
       processRequest(in, out);
 
-      System.out.println("클라이언트 연결 종료!");
+      System.out.printf("[%s] 클라이언트와 연결됨!\n", Thread.currentThread().getName());
 
     } catch (Exception e) {
-      System.out.println("클라이언트 연결 오류!");
+      System.out.printf("[%s] 클라이언트와 연결됨!\n", Thread.currentThread().getName());
     }
   }
 

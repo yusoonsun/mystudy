@@ -2,7 +2,8 @@
 package com.eomcs.concurrent.ex5;
 
 public class Exam0630 {
-  public static void main(String[]args) {
+  public static void main(String[] args) {
+
     Job job1 = new Job();
     Job job2 = new Job();
 
@@ -15,9 +16,11 @@ public class Exam0630 {
     w2.start();
     w3.start();
     w4.start();
+
   }
 
   static class Job {
+
     synchronized void play1(String threadName) throws Exception {
       System.out.println(threadName + ".play1() 호출함!");
       Thread.sleep(10000);
@@ -47,7 +50,7 @@ public class Exam0630 {
     public void run() {
       try {
         job.play1(getName());
-      } catch(Exception e) {
+      } catch (Exception e) {
         e.printStackTrace();
       }
     }
@@ -65,7 +68,7 @@ public class Exam0630 {
     public void run() {
       try {
         job.play2(getName());
-      } catch(Exception e) {
+      } catch (Exception e) {
         e.printStackTrace();
       }
     }
@@ -83,7 +86,7 @@ public class Exam0630 {
     public void run() {
       try {
         job.play3(getName());
-      } catch(Exception e) {
+      } catch (Exception e) {
         e.printStackTrace();
       }
     }
@@ -101,7 +104,7 @@ public class Exam0630 {
     public void run() {
       try {
         job.play1(getName());
-      } catch(Exception e) {
+      } catch (Exception e) {
         e.printStackTrace();
       }
     }

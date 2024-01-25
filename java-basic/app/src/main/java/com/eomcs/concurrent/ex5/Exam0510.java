@@ -2,7 +2,8 @@
 package com.eomcs.concurrent.ex5;
 
 public class Exam0510 {
-  public static void main(String[]args) {
+  public static void main(String[] args) {
+
     Job job = new Job();
 
     Worker w1 = new Worker("홍길동", job);
@@ -10,6 +11,7 @@ public class Exam0510 {
 
     w1.start();
     w2.start();
+
   }
 
   static class Job {
@@ -31,16 +33,8 @@ public class Exam0510 {
     public void run() {
       try {
         job.play(getName());
-      } catch(Exception e) {
+      } catch (Exception e) {
         e.printStackTrace();
-      }
-    }
-
-    private void delay() {
-      int delayCount = (int)(Math.random() * 1000);
-      for (int i = 0; i < delayCount; i++)
-      {
-        Math.asin(45.765); // CPU를 뺏길 기회를 제공
       }
     }
   }
