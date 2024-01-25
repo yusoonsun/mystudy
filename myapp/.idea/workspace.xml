@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a84827e7-6d13-4c5e-bb9d-79b24217473a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assignment.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/board.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/greeting.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/member.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-36/src/main/java/bitcamp/myapp/vo/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-36/src/main/java/bitcamp/myapp/vo/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-36/src/main/java/bitcamp/myapp/vo/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-36/src/main/java/bitcamp/myapp/vo/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-36/src/main/java/bitcamp/myapp/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-36/src/main/java/bitcamp/myapp/vo/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assignment.data" beforeDir="false" afterPath="$PROJECT_DIR$/app/assignment.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/board.data" beforeDir="false" afterPath="$PROJECT_DIR$/app/board.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/greeting.data" beforeDir="false" afterPath="$PROJECT_DIR$/app/greeting.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/member.data" beforeDir="false" afterPath="$PROJECT_DIR$/app/member.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/vo/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/vo/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/vo/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/vo/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/vo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/vo/Member.java" afterDir="false" />
-    </list>
+    <list default="true" id="a84827e7-6d13-4c5e-bb9d-79b24217473a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +19,18 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app-server">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app-client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app-common">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app-api">
           <activation />
         </task>
         <projects_view>
@@ -66,13 +61,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,7 +76,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2YVqoas3HZMyDucRGhaeVfmvbIG" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -91,23 +86,41 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.myapp [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp [run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app [:app:DaoTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:QueueTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:StackTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:Test.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-api [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-client [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-client [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-client [run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-common [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-common [classes].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-server [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app-server [run].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app/src/main/java/bitcamp/myapp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/settings.gradle&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app-server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app-server" />
+      <recent name="$PROJECT_DIR$/app-client" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/src/test/resources" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -116,59 +129,14 @@
       <recent name="bitcamp.myapp.AssignmentMenu" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bitcamp.myapp.dao.network" />
+      <recent name="bitcamp.myapp.dao.json" />
+      <recent name="bitcamp.myapp.dao" />
       <recent name="bitcamp.io" />
       <recent name="bitcamp.util" />
-      <recent name="bitcamp.myapp.handler.member" />
-      <recent name="bitcamp.myapp.handler.assignment" />
-      <recent name="bitcamp.myapp.menu" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.myapp [run]">
-    <configuration name="QueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="bitcamp.util.QueueTest" />
-      <module name="myapp.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bitcamp.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="bitcamp.util.StackTest" />
-      <module name="myapp.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bitcamp.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="bitcamp.util.Test" />
-      <module name="myapp.app.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bitcamp.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.myapp:app-client [run]">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,7 +157,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="myapp [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="myapp [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -200,7 +168,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="classes" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -211,10 +179,76 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="myapp [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="myapp:app-client [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app-client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="myapp:app-client [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app-client" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="myapp:app-server [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app-server" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="myapp:app-server [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app-server" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -234,26 +268,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.QueueTest" />
-      <item itemvalue="Application.StackTest" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Gradle.myapp [classes]" />
-      <item itemvalue="Gradle.myapp [run]" />
+      <item itemvalue="Gradle.myapp:app-client [build]" />
+      <item itemvalue="Gradle.myapp:app-client [run]" />
+      <item itemvalue="Gradle.myapp:app-server [run]" />
+      <item itemvalue="Gradle.myapp [build]" />
+      <item itemvalue="Gradle.myapp:app-server [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.myapp [run]" />
-        <item itemvalue="Gradle.myapp [classes]" />
+        <item itemvalue="Gradle.myapp:app-client [run]" />
+        <item itemvalue="Gradle.myapp:app-server [run]" />
+        <item itemvalue="Gradle.myapp:app-server [build]" />
+        <item itemvalue="Gradle.myapp [build]" />
+        <item itemvalue="Gradle.myapp:app-client [build]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-301ddabe" />
-        <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-55c9c8bc" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
