@@ -8,11 +8,9 @@ public class MainMenu {
   static final String APP_TITLE = ANSI_BOLD_RED + "[과제관리 시스템]" + ANSI_CLEAR;
   static final String[] MENUS = {
       "1. 과제",
-      "2. 게시글333",
-      "3. 회원",
-      "4. 가입인사",
-      "5. 도움말",
-      ANSI_RED + "0. 종료" + ANSI_CLEAR
+      "2. 게시글",
+      "3. 도움말",
+      ANSI_RED + "4. 종료" + ANSI_CLEAR
   };
 
   static void printMenu() {
@@ -23,11 +21,11 @@ public class MainMenu {
     }
   }
 
-  void execute() {
+  static void execute() {
     printMenu();
 
     while (true) {
-      String input = this.Prompt.input("메인> ");
+      String input = Prompt.input("메인> ");
 
       switch (input) {
         case "1":
@@ -37,15 +35,9 @@ public class MainMenu {
           BoardMenu.execute();
           break;
         case "3":
-          MemberMenu.execute();
-          break;
-        case "4":
-          GreetingMenu.execute();
-          break;
-        case "5":
           System.out.println("도움말입니다.");
           break;
-        case "0":
+        case "4":
           System.out.println("종료합니다.");
           return;
         case "menu":

@@ -349,63 +349,69 @@
 
 - CSV 형식으로 데이터를 읽고 쓰는 법
 - FileReader/FileWriter 사용법
+- GRASP의 Information Expert 패턴 적용
+  - toCsvString() 메서드 정의
+  - createFromCsv() 메서드 정의
+- GoF의 Factory Method 패턴 적용
+  - createFromCsv() 메서드 정의
+- Reflection API 사용
+  - createFromCsv() 메서드 정보 알아내기 및 호출하기
 
-
-
-
-
-
-
-## 34. 리팩토링: Factory Method 패턴(GoF), Information Expert 패턴(GRASP)
-
-- CSV 데이터 생성을 Board 클래스에 맡기기
-  - Information Expert 패턴 적용
-- CSV 데이터를 가지로 Board 클래스 생성하기
-  - Factory Method 패턴 적용
-  - Reflection API 사용법
-    - Class, Method 사용법
-
-## 35. JSON 형식으로 입출력하기
+## 38. JSON 형식으로 입출력하기
 
 - JSON 형식으로 데이터를 읽고 쓰는 법
 - Gson 라이브러리 사용법
 
-## 36. 데이터의 등록, 조회, 수정, 삭제 기능을 캡슐화하기 : DAO 객체 도입
+## 39. 데이터의 등록, 조회, 수정, 삭제 기능을 캡슐화하기 : DAO 객체 도입
 
-- XxxListener에서 데이터를 조작하는 코드를 캡슐화하여 별도의 클래스로 분리
+- XxxHandler에서 데이터를 조작하는 코드를 캡슐화하여 별도의 클래스로 분리
+  - UI 처리 코드와 데이터 처리 코드를 분리
+  - UI 처리 방식이 바뀌더라도 데이터 처리 코드는 재사용할 수 있다.
+  - List나 Map처럼 특정 자료구조에 종속적인 코드를 작성할 필요가 없어진다.
+- 데이터 식별 값 추가
+  - 기존 방식은 인덱스 사용
+    - 데이터를 삭제하면 인덱스가 변경된다.
+    - 데이터 조회 시 일관성이 없다.
+  - 개선 방식은 각 데이터에 고유의 식별 번호 부여
+    - 데이터를 삭제하더라도 기존 데이터의 식별 번호는 그대로 유지된다.
+    - 데이터 조회 시 일관성이 있다.
 - 인터페이스로 DAO 객체 사용법을 정의
+  - DAO 교체가 용이하다.
 
-## 37. 네트워킹을 이용하여 데이터 공유하기 : Client/Server 아키텍처로 전환
+## 40. 네트워킹을 이용하여 데이터 공유하기 : Client/Server 아키텍처로 전환
 
 - 네트워크 프로그래밍 방법
   - Client와 Server 개념
   - 프로토콜에 따라 애플리케이션 간에 데이터를 주고 받기
-  - GoF의 프록시 패턴의 원리 이해 및 적용
-  - 분산 컴퓨팅의 개념과 주요 기술 이해
+- Reflection API를 사용하는 방법
+  - 서버의 DAO 메서드 호출을 자동화 하는 방법
+- GoF의 "Proxy" 패턴 적용
+  - 원격 객체와 동일한 인터페이스를 갖는 대행 객체(프록시) 구현하기
 
-## 38. DAO 프록시 객체를 자동 생성하기
+## 41. 공통 기능을 서브 프로젝트로 분리하기
+
+- Gradle 빌드 도구에서 멀티 서브 프로젝트를 다루는 방법
+- 클라이언트와 서버에서 공통으로 사용하는 코드를 별도의 프로젝트로 분리
+  - app-common 프로젝트 생성
+- 원격 서비스 객체(DAO)의 Stub을 별도의 프로젝트로 분리
+  - app-api 프로젝트 생성
+
+
+## 42. DAO 프록시 객체(스텁 객체)를 자동 생성하기
 
 - java.lang.reflect.Proxy 클래스 사용법
-- 프록시 객체의 구동원리 이해
+- Reflection API를 사용하여 메서드 정보를 추출하기
+- GoF의 Factory Method 패턴 활용 
 
-## 39. Reflection API를 활용하여 DAO 메서드 호출을 자동화하기
-
-- Reflection API를 사용하는 방법
-- 서버의 DAO 메서드 호출을 자동화 하는 방법
-
-
-## 41. 여러 클라이언트의 요청을 순차적으로 처리하기: Stateful 방식
-
-- 클라이언트 요청을 순차적으로 처리하는 방법
-- 구동 원리와 문제점
-
-## 42. 여러 클라이언트의 요청을 순차적으로 처리하기: Stateless 방식
+## 43. 여러 클라이언트의 요청을 순차적으로 처리하기: Stateless 방식
 
 - Stateless 방식으로 통신하는 방법
-- 구동 원리와 Stateful 방식 대비 이점
+  - Connection-Oriented vs Connectionless
+  - Stateful vs Stateless
+- Stateless 방식의 구동 원리와 Stateful 방식 대비 이점
 - Stateless 방식의 문제점
 
-## 43. 여러 클라이언트 요청을 동시에 처리하기: Thread 적용
+## 44. 여러 클라이언트 요청을 동시에 처리하기: Thread 적용
 
 - 멀티태스킹의 메커니즘 이해
   - 프로세스 스케쥴링: Round Robin 방식, Priority + Aging 방식
@@ -416,14 +422,20 @@
   - 스레드의 라이프사이클 이해
   - Thread 클래스와 Runnable 인터페이스 사용법
 
-## 44. 스레드 재사용하기 : 스레드풀(thread pool) 구현
+## 45. 스레드 재사용하기 : 스레드풀(thread pool) 구현
 
-- Pooling 기법을 활용하여 스레드를 재사용하는 방법
+- Pooling 기법을 활용하여 스레드 객체를 관리하는 방법
+- 스레드를 재사용 하는 방법
 - GoF의 FlyWeight 디자인 패턴(풀링 기법)을 적용하여 스레드풀을 구현하는 방법
 
-## 45. 스레드 재사용하기 : 자바에서 제공하는 스레드풀(thread pool) 사용
+## 46. 스레드 재사용하기 : 자바에서 제공하는 스레드풀(thread pool) 사용
 
 - Excutors/ExcutorService 사용법
+
+
+
+
+
 
 ## 46. DBMS 도입하기
 
