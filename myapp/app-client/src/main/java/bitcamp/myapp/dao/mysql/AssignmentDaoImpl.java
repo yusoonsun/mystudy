@@ -11,12 +11,11 @@ import java.util.List;
 
 public class AssignmentDaoImpl implements AssignmentDao {
 
-  int category;
   Connection con;
 
   public AssignmentDaoImpl(Connection con) {
     this.con = con;
-    this.category = category;
+
   }
 
   @Override
