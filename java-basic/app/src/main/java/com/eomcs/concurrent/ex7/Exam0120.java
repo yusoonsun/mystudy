@@ -13,7 +13,7 @@ public class Exam0120 {
           System.out.printf("%s - Hello!\n", Thread.currentThread().getName());
 
           try { 
-            Thread.sleep(10000); // 현재 스레드를 10초 동안 멈춘다.
+            Thread.sleep(3000); // 현재 스레드를 10초 동안 멈춘다.
           } catch (Exception e) {}
 
           System.out.printf("%s 스레드 종료!\n", Thread.currentThread().getName());

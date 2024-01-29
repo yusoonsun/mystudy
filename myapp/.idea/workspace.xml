@@ -4,7 +4,89 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a84827e7-6d13-4c5e-bb9d-79b24217473a" name="Changes" comment="" />
+    <list default="true" id="a84827e7-6d13-4c5e-bb9d-79b24217473a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app-46-api/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-api/src/main/java/bitcamp/myapp/dao/DaoProxyGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-api/src/main/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-api/src/test/java/bitcamp/myapp/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-api/src/test/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/menu/AbstractMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/menu/AbstractMenuHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/menu/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/menu/MenuGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/menu/MenuHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/menu/MenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/ClientApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/HelpHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/assignment/AssignmentAddHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/assignment/AssignmentDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/assignment/AssignmentListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/assignment/AssignmentModifyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/assignment/AssignmentViewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/board/BoardAddHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/board/BoardDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/board/BoardListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/board/BoardModifyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/board/BoardViewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/member/MemberAddHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/member/MemberDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/member/MemberListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/member/MemberModifyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/myapp/handler/member/MemberViewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/util/AnsiEscape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/java/bitcamp/util/Prompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/main/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/test/java/bitcamp/myapp/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-client/src/test/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/dao/AssignmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/dao/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/dao/DaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/dao/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/vo/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/vo/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/java/bitcamp/myapp/vo/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/main/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/test/java/bitcamp/myapp/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-common/src/test/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/assignment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/board.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/greeting.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/member.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/java/bitcamp/RequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/java/bitcamp/myapp/ServerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/java/bitcamp/myapp/dao/json/AbstractDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/java/bitcamp/myapp/dao/json/AssignmentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/java/bitcamp/myapp/dao/json/BoardDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/java/bitcamp/myapp/dao/json/MemberDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/main/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/test/java/bitcamp/myapp/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-46-server/src/test/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/doc/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/AssignmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/DaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/mysql/AssignmentDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/mysql/BoardDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/dao/mysql/MemberDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/vo/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/vo/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/vo/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/concurrent/ex7/Exam0120.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/concurrent/ex7/Exam0120.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp/ClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,8 +150,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -83,7 +165,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2YVqoas3HZMyDucRGhaeVfmvbIG" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -116,7 +198,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app/src/main/java/bitcamp/myapp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app-server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app-client/src/main/java/bitcamp/myapp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -125,6 +207,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app-client/src/main/java/bitcamp/myapp" />
       <recent name="$PROJECT_DIR$/app-server" />
       <recent name="$PROJECT_DIR$/app-client" />
       <recent name="$PROJECT_DIR$" />
@@ -274,6 +357,19 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="myapp.app-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="myapp.app-api" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.myapp:app-client [build]" />
       <item itemvalue="Gradle.myapp:app-client [run]" />
@@ -290,14 +386,6 @@
         <item itemvalue="Gradle.myapp:app-client [build]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-301ddabe" />
-        <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-55c9c8bc" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
