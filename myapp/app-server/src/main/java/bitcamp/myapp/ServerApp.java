@@ -4,6 +4,10 @@ import bitcamp.RequestException;
 import bitcamp.myapp.dao.json.AssignmentDaoImpl;
 import bitcamp.myapp.dao.json.BoardDaoImpl;
 import bitcamp.myapp.dao.json.MemberDaoImpl;
+<<<<<<< HEAD
+=======
+import bitcamp.util.ThreadPool;
+>>>>>>> c3b0ff15306e8c396429b1ef766ae8bdf472617c
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.DataInputStream;
@@ -14,12 +18,19 @@ import java.lang.reflect.Parameter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
+<<<<<<< HEAD
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ServerApp {
 
   ExecutorService executorService = Executors.newCachedThreadPool();
+=======
+
+public class ServerApp {
+
+  ThreadPool threadPool = new ThreadPool(5);
+>>>>>>> c3b0ff15306e8c396429b1ef766ae8bdf472617c
   HashMap<String, Object> daoMap = new HashMap<>();
   Gson gson;
 
@@ -45,7 +56,11 @@ public class ServerApp {
 
       while (true) {
         Socket socket = serverSocket.accept();
+<<<<<<< HEAD
         executorService.execute(() -> service(socket));
+=======
+        threadPool.get().setWorker(() -> service(socket));
+>>>>>>> c3b0ff15306e8c396429b1ef766ae8bdf472617c
       }
 
     } catch (Exception e) {
