@@ -1,8 +1,8 @@
-package bitcamp.myapp.dao.mysql;
+package camping.myapp.dao.mysql;
 
-import bitcamp.myapp.dao.DaoException;
-import bitcamp.myapp.dao.MemberDao;
-import bitcamp.myapp.vo.Member;
+import camping.myapp.dao.DaoException;
+import camping.myapp.dao.MemberDao;
+import camping.myapp.vo.Member;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.PreparedStatement;
@@ -20,11 +20,13 @@ public class MemberDaoImpl implements MemberDao {
   @Override
   public void add(Member member) {
     try (PreparedStatement pstmt = con.prepareStatement(
-        "insert into members(email,name,password) values(?,?,?)")) {
+        "insert into members(name,gender,tel,email,password) values(?,?,?)")) {
 
-      pstmt.setString(1, member.getEmail());
-      pstmt.setString(2, member.getName());
-      pstmt.setString(3, member.getPassword());
+      pstmt.setString(1, member.getName());
+      pstmt.setString(2, member.getGender());
+      pstmt.setInt(3, member.getTel());
+      pstmt.setString(4, member.getEmail());
+      pstmt.setString(5, member.getPassword());
 
       pstmt.executeUpdate();
 
@@ -50,7 +52,7 @@ public class MemberDaoImpl implements MemberDao {
   @Override
   public List<Member> findAll() {
     try (PreparedStatement pstmt = con.prepareStatement(
-        "select member_no, email, name, created_date from members order by member_no desc");
+        "select member_no, name, gender, tel, email, created_date from members order by member_no desc");
         ResultSet rs = pstmt.executeQuery()){
 
       ArrayList<Member> list = new ArrayList<>();
@@ -58,8 +60,10 @@ public class MemberDaoImpl implements MemberDao {
       while (rs.next()) {
         Member member = new Member();
         member.setNo(rs.getInt("member_no"));
-        member.setEmail(rs.getString("email"));
         member.setName(rs.getString("name"));
+        member.setGender(rs.getString("gender"));
+        member.setTel(rs.getInt("tel"));
+        member.setEmail(rs.getString("email"));
         member.setCreatedDate(rs.getDate("created_date"));
 
         list.add(member);
@@ -83,8 +87,10 @@ public class MemberDaoImpl implements MemberDao {
         if (rs.next()) {
           Member member = new Member();
           member.setNo(rs.getInt("member_no"));
-          member.setEmail(rs.getString("email"));
           member.setName(rs.getString("name"));
+          member.setGender(rs.getString("gender"));
+          member.setTel(rs.getInt("tel"));
+          member.setEmail(rs.getString("email"));
           member.setCreatedDate(rs.getDate("created_date"));
 
           return member;
@@ -100,12 +106,14 @@ public class MemberDaoImpl implements MemberDao {
   @Override
   public int update(Member member) {
     try (PreparedStatement pstmt = con.prepareStatement(
-        "update members set email=?, name=?, password=sha2(?,256) where member_no=?")) {
+        "update members set name=?, gender=?, tel=?, email=?, password=sha2(?,256) where member_no=?")) {
 
-      pstmt.setString(1, member.getEmail());
-      pstmt.setString(2, member.getName());
-      pstmt.setString(3, member.getPassword());
-      pstmt.setInt(4, member.getNo());
+      pstmt.setString(1, member.getName());
+      pstmt.setString(2, member.getGender());
+      pstmt.setInt(3, member.getTel());
+      pstmt.setString(4, member.getEmail());
+      pstmt.setString(5, member.getPassword());
+      pstmt.setInt(6, member.getNo());
 
       return pstmt.executeUpdate();
 
