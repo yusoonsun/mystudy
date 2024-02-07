@@ -18,7 +18,7 @@ public class Exam0412 {
 
     void test() {
       // this 레퍼런스로 메서드를 호출하면,
-      // => 인스턴스의 클래스(this의 실제 클래스, 예: A3)에서부터 메서드를 찾아 호출한다.
+      // => 인스턴스 클래스(this의 실제 클래스, 예: A4)에서부터 메서드를 찾아 호출한다.
       // => 현재 클래스에 메서드가 없으면 수퍼 클래스에서 메서드를 찾는다.
       // => 메서드를 찾을 때까지 최상위 클래스까지 따라 올라간다.
       this.m();
@@ -47,8 +47,14 @@ public class Exam0412 {
 
   public static void main(String[] args) {
     A4 obj = new A4();
-    obj.test(); // A2의 test() 호출
+    obj.test();  // A2의 test() 호출
   }
 }
+
+
+
+
+
+
 
 

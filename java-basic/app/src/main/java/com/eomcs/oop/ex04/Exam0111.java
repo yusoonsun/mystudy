@@ -25,12 +25,13 @@ public class Exam0111 {
     System.out.println(s2);
     System.out.println("-----------------------------------");
 
-    // => 바이트 배열을 가지고 String 인스턴스 초기화시키기 (ISO-8859-1)
-    byte[] bytes = {(byte) 0x48, // H
-        (byte) 0x65, // e
-        (byte) 0x6c, // l
-        (byte) 0x6c, // l
-        (byte) 0x6f // o
+    // => 바이트 배열을 가지고 String 인스턴스 초기화시키기
+    byte[] bytes = {
+        (byte)0x48, // H 
+        (byte)0x65, // e
+        (byte)0x6c, // l
+        (byte)0x6c, // l
+        (byte)0x6f  // o 
     };
     String s3 = new String(bytes); // String(byte[]) 생성자를 호출하여 인스턴스 초기화
 
@@ -40,6 +41,19 @@ public class Exam0111 {
 
 // 생성자의 활용
 // => 인스턴스 변수를 초기화시키기 위해 여러 개의 생성자를 만들어 제공할 수 있다.
-// => 자신에게 맞는 적절한 생성자를 호출하여 인스턴스를 초기화시킨 후 사용하면 된다.
+// => 자신에게 맞는 적절한 생성자를 호출하여 인스턴스를 초기화시킨 후 사용하면 된다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

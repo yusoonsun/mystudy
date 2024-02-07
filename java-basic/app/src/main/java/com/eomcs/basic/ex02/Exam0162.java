@@ -12,7 +12,6 @@ public class Exam0162 {
 
     strBuilder.replace(2, 4, "xxxx");// 원본을 바꾼다.
     System.out.println(strBuilder);
-
   }
 }
 

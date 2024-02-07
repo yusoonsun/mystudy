@@ -5,12 +5,12 @@ public class Exam0163 {
   public static void main(String[] args) throws Exception {
     StringBuffer buf = new StringBuffer();
 
-    Worker w1 = new Worker(buf, "AAAAA");
-    Worker w2 = new Worker(buf, "-----");
-    Worker w3 = new Worker(buf, "XXXXX");
-    Worker w4 = new Worker(buf, "*****");
+    Worker w1 = new Worker(buf, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+    Worker w2 = new Worker(buf, "--------------------------------------------------");
+    Worker w3 = new Worker(buf, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+    Worker w4 = new Worker(buf, "**************************************************");
 
-    // 순차적으로 작업을 시키지 않고 동시에 진행하낟.
+    // 순차적으로 작업을 시키지 않고 동시에 진행한다.
     // => Thread 객체에 대해 start()를 호출하면 run() 메서드를 실행시키고 즉시 리턴한다.
     // => 즉 run() 메서드의 작업이 끝날 때까지 기다리지 않는다.
     w1.start();
@@ -22,8 +22,7 @@ public class Exam0163 {
     // 2초 정도 기다렸다가 다음 명령을 실행한다.
     Thread.currentThread().sleep(2000);
     System.out.println("실행 끝!");
-    System.out.println(buf);
-
+    System.out.println(buf.length());
   }
 
   // 하는 일:
@@ -44,9 +43,7 @@ public class Exam0163 {
         buf.append(message);
       }
       System.out.printf("'%s' 메시지 저장 끝!\n", message);
-
     }
-
   }
 
 }

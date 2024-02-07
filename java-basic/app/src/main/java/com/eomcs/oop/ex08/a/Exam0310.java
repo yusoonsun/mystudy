@@ -1,4 +1,4 @@
-// # 캡슐화 문법 사용 전 - 개발자가 특정 필드를 직접 접근하지 못하게 막기
+//# 캡슐화 문법 사용 전 - 개발자가 특정 필드를 직접 접근하지 못하게 막기
 package com.eomcs.oop.ex08.a;
 
 public class Exam0310 {
@@ -23,12 +23,21 @@ public class Exam0310 {
 
     // 원래 Score2의 개발자 의도대로 사용한다면
     // 다음과 같이 국, 영, 수 점수를 변경한 후 compute()를 호출했어야 한다.
-    s1.compute();
+    //    s1.compute();
     // 그런데 이렇게 하지 않는 경우가 문제가 되는 것이다.
 
-    System.out.printf("%s, %d, %d, %d, %d, %.1f\n", s1.name, s1.kor, s1.eng, s1.math, s1.getSum(),
-        s1.getAver());
+    System.out.printf("%s, %d, %d, %d, %d, %.1f\n",
+        s1.name, s1.kor, s1.eng, s1.math, s1.getSum(), s1.getAver());
   }
 }
+
+
+
+
+
+
+
+
+
 
 

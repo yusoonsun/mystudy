@@ -6,13 +6,11 @@ public class Exam0130 {
 
   interface ProtocolA {
     void rule0();
-
     void rule1();
   }
 
   interface ProtocolB {
     void rule0();
-
     void rule2();
   }
 
@@ -31,27 +29,19 @@ public class Exam0130 {
 
     // ProtocolA, ProtocolB 규칙 동시 준수!
     @Override
-    public void rule0() {
-      System.out.println("rule1()");
-    }
+    public void rule0() {System.out.println("rule1()");}
 
     // ProtocolA 규칙 준수!
     @Override
-    public void rule1() {
-      System.out.println("rule1()");
-    }
+    public void rule1() {System.out.println("rule1()");}
 
     // ProtocolB 규칙 준수!
     @Override
-    public void rule2() {
-      System.out.println("rule2()");
-    }
+    public void rule2() {System.out.println("rule2()");}
 
     // ProtocolC 규칙 준수!
     @Override
-    public void rule3() {
-      System.out.println("rule3()");
-    }
+    public void rule3() {System.out.println("rule3()");}
   }
 
   void test() {
@@ -74,15 +64,15 @@ public class Exam0130 {
 
 
     b.rule0(); // OK
-    // b.rule1(); // 컴파일 오류!
+    //    b.rule1(); // 컴파일 오류!
     b.rule2(); // OK
-    // b.rule3(); // 컴파일 오류!
+    //    b.rule3(); // 컴파일 오류!
     System.out.println("-------------------------------");
 
     a.rule0(); // OK
     a.rule1(); // OK
-    // a.rule2(); // 컴파일 오류!
-    // a.rule3(); // 컴파일 오류!
+    //    a.rule2(); // 컴파일 오류!
+    //    a.rule3(); // 컴파일 오류!
     System.out.println("-------------------------------");
   }
 
@@ -90,5 +80,10 @@ public class Exam0130 {
     new Exam0130().test();
   }
 }
+
+
+
+
+
 
 

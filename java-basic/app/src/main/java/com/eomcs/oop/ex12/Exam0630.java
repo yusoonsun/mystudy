@@ -8,6 +8,12 @@ public class Exam0630 {
   public static void main(String[] args) {
 
     // Predicate<String> 인터페이스 구현체 준비하기
+    // => 자바에서 제공하는 인터페이스
+    // => 형식
+    //    interface Predicate<T> {
+    //      boolean test(T value);
+    //      ...
+    //    }
 
     // 1) 로컬 클래스로 인터페이스 구현체 만들기
     class MyPredicate<T> implements Predicate<T> {
@@ -17,21 +23,9 @@ public class Exam0630 {
       }
     }
     Predicate<String> p1 = new MyPredicate<>();
+    System.out.println(p1.test("")); // true
+    System.out.println(p1.test("Hello!")); // false
 
-    // 2) 익명 클래스로 인터페이스 구현체 만들기
-    Predicate<String> p2 = new Predicate<>() {
-      @Override
-      public boolean test(String value) {
-        return value.isEmpty();
-      }
-    };
-
-    // 3) 람다로 인터페이스 구현체 만들기
-    Predicate<String> p3 = value -> value.isEmpty();
-
-    // 4) 메서드 레퍼런스를 사용하여 기존 클래스의 메서드를 인터페이스 구현체로 사용하기
-    // => 의미: "Predicate 인터페이스 구현체로서 String의 isEmpty()를 사용하겠다"
-    Predicate<String> p4 = String::isEmpty;
   }
 
 }
