@@ -22,8 +22,13 @@ public class MemberDaoImpl implements MemberDao {
     try {
       Statement stmt = con.createStatement();
       stmt.executeUpdate(String.format(
+<<<<<<< HEAD
           "insert into members(email,name,password) values('%s','%s',sha2('%s',256))",
           member.getEmail(), member.getName(), member.getPassword()));
+=======
+              "insert into members(email,name,password) values('%s', '%s', sha2('%s',256))",
+              member.getEmail(), member.getName(), member.getPassword()));
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
 
     } catch (Exception e) {
       throw new DaoException("데이터 입력 오류", e);
@@ -34,13 +39,22 @@ public class MemberDaoImpl implements MemberDao {
   public int delete(int no) {
     try {
       Statement stmt = con.createStatement();
+<<<<<<< HEAD
       return stmt.executeUpdate(String.format("delete from members where member_no=%d", no));
 
+=======
+      return stmt.executeUpdate(String.format(
+              "delete from members where member_no=%d", no));
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
     } catch (Exception e) {
       throw new DaoException("데이터 삭제 오류", e);
     }
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
   @Override
   public List<Member> findAll() {
     try {
@@ -49,7 +63,11 @@ public class MemberDaoImpl implements MemberDao {
 
       ArrayList<Member> list = new ArrayList<>();
 
+<<<<<<< HEAD
       while (rs.next()) {
+=======
+      while (rs. next()) {
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
         Member member = new Member();
         member.setNo(rs.getInt("member_no"));
         member.setEmail(rs.getString("email"));
@@ -59,7 +77,10 @@ public class MemberDaoImpl implements MemberDao {
         list.add(member);
       }
       return list;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
     } catch (Exception e) {
       throw new DaoException("데이터 가져오기 오류", e);
     }
@@ -81,7 +102,10 @@ public class MemberDaoImpl implements MemberDao {
         return member;
       }
       return null;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
     } catch (Exception e) {
       throw new DaoException("데이터 가져오기 오류", e);
     }
@@ -92,11 +116,20 @@ public class MemberDaoImpl implements MemberDao {
     try {
       Statement stmt = con.createStatement();
       return stmt.executeUpdate(String.format(
+<<<<<<< HEAD
           "update members set email='%s', name='%s', password=sha2('%s',256) where member_no=%d",
           member.getEmail(), member.getName(), member.getPassword(), member.getNo()));
 
+=======
+              "update members set email='%s', name='%s', password=sha2('%s',256) where member_no=%d",
+              member.getEmail(), member.getName(), member.getPassword(), member.getNo()));
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
     } catch (Exception e) {
       throw new DaoException("데이터 변경 오류", e);
     }
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
 }

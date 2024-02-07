@@ -15,6 +15,10 @@ public class AssignmentDaoImpl implements AssignmentDao {
 
   public AssignmentDaoImpl(Connection con) {
     this.con = con;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
   }
 
   @Override
@@ -22,8 +26,13 @@ public class AssignmentDaoImpl implements AssignmentDao {
     try {
       Statement stmt = con.createStatement();
       stmt.executeUpdate(String.format(
+<<<<<<< HEAD
           "insert into assignments(title,content,deadline) values('%s','%s','%s')",
           assignment.getTitle(), assignment.getContent(), assignment.getDeadline()));
+=======
+              "insert into assignments(title,content,deadline) values('%s', '%s', '%s')",
+              assignment.getTitle(), assignment.getContent(), assignment.getDeadline()));
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
 
     } catch (Exception e) {
       throw new DaoException("데이터 입력 오류", e);
@@ -34,11 +43,19 @@ public class AssignmentDaoImpl implements AssignmentDao {
   public int delete(int no) {
     try {
       Statement stmt = con.createStatement();
+<<<<<<< HEAD
       return stmt.executeUpdate(
           String.format("delete from assignments where assignment_no=%d", no));
 
     } catch (Exception e) {
       throw new DaoException("데이터 삭제 오류", e);
+=======
+      return stmt.executeUpdate(String.format(
+              "delete from assignments where assignment_no=%d", no));
+
+    } catch (Exception e) {
+      throw new DaoException("데이터 입력 오류", e);
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
     }
   }
 
@@ -70,9 +87,13 @@ public class AssignmentDaoImpl implements AssignmentDao {
   public Assignment findBy(int no) {
     try {
       Statement stmt = con.createStatement();
+<<<<<<< HEAD
       ResultSet rs = stmt.executeQuery("select * from assignments where assignment_no=" + no);
 
       ArrayList<Assignment> list = new ArrayList<>();
+=======
+      ResultSet rs = stmt.executeQuery("select * from assignments where assignment_no = " + no);
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
 
       if (rs.next()) {
         Assignment assignment = new Assignment();
@@ -95,6 +116,7 @@ public class AssignmentDaoImpl implements AssignmentDao {
     try {
       Statement stmt = con.createStatement();
       return stmt.executeUpdate(String.format(
+<<<<<<< HEAD
           "update assignments set title='%s', content='%s', deadline='%s' where assignment_no=%d",
           assignment.getTitle(), assignment.getContent(), assignment.getDeadline(),
           assignment.getNo()));
@@ -104,3 +126,13 @@ public class AssignmentDaoImpl implements AssignmentDao {
     }
   }
 }
+=======
+              "update assignments set title='%s', content='%s', deadline='%s' where assignment_no=%d",
+              assignment.getTitle(), assignment.getContent(), assignment.getDeadline(), assignment.getNo()));
+
+    } catch (Exception e) {
+      throw new DaoException("데이터 입력 오류", e);
+    }
+  }
+}
+>>>>>>> 532c703ff5ba30a7402a5eb323c74b833439de7d
