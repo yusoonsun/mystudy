@@ -1,4 +1,4 @@
-package bitcamp.myapp.servlet;
+package bitcamp.myapp.servlet.board;
 
 import bitcamp.menu.AbstractMenuHandler;
 import bitcamp.myapp.dao.BoardDao;
@@ -35,12 +35,14 @@ public class BoardListServlet extends GenericServlet {
 
     out.println("<!DOCTYPE html>");
     out.println("<html lang='en'>");
-        out.println("<head>");
-        out.println("  <meta charset='UTF-8'>");
-        out.println("  <title>비트캠프 데브옵스 5기</title>");
-        out.println("</head>");
-        out.println("<body>");
-        out.println("<h1>게시글</h1>");
+    out.println("<head>");
+    out.println("  <meta charset='UTF-8'>");
+    out.println("  <title>비트캠프 데브옵스 5기</title>");
+    out.println("</head>");
+    out.println("<body>");
+    out.println("<h1>게시글</h1>");
+
+    out.println("<a href='/board/form.html'>새 글</a>");
 
     try {
       out.println("<table border='1'>");
@@ -53,7 +55,7 @@ public class BoardListServlet extends GenericServlet {
       List<Board> list = boardDao.findAll();
 
       for (Board board : list) {
-        out.printf("<tr> <td>%d</td> <td>%s</td> <td>%s</td> <td>%s</td> <td>%d</td> </tr>\n",
+        out.printf("<tr> <td>%d</td> <td><a href='/board/view?no=%1$d'>%s</td> <td>%s</td> <td>%s</td> <td>%d</td> </tr>\n",
             board.getNo(),
             board.getTitle(),
             board.getWriter().getName(),
@@ -67,7 +69,7 @@ public class BoardListServlet extends GenericServlet {
     } catch (Exception e) {
       out.println("<p>목록 오류!</p>");
       out.printf("<pre>");
-      e.printStackTrace();
+      e.printStackTrace(out);
       out.printf("</pre>");
     }
 
