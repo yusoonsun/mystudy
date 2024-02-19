@@ -15,10 +15,10 @@ public class LogoutServlet extends HttpServlet {
   public void service(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-  request.getSession().invalidate();
+    request.getSession().invalidate();
 
-  response.setContentType("text/html;charset=UTF-8");
-  PrintWriter out = response.getWriter();
+    response.setContentType("text/html;charset=UTF-8");
+    PrintWriter out = response.getWriter();
 
     out.println("<!DOCTYPE html>");
     out.println("<html lang='en'>");
@@ -32,6 +32,5 @@ public class LogoutServlet extends HttpServlet {
     out.println("<p>로그아웃 했습니다!</p>");
     out.println("</body>");
     out.println("</html>");
-
   }
 }

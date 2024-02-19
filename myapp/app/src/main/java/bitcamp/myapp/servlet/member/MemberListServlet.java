@@ -1,4 +1,4 @@
-package bitcamp.myapp.servlet.auth;
+package bitcamp.myapp.servlet.member;
 
 import bitcamp.myapp.dao.MemberDao;
 import bitcamp.myapp.dao.mysql.MemberDaoImpl;
@@ -6,19 +6,17 @@ import bitcamp.myapp.vo.Member;
 import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.GenericServlet;
+import java.util.List;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/auth/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/member/list")
+public class MemberListServlet extends HttpServlet {
 
-  MemberDao memberDao;
+  private MemberDao memberDao;
 
   @Override
   public void init() {
@@ -28,9 +26,6 @@ public class LoginServlet extends HttpServlet {
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-
-    String email = request.getParameter("email");
-    String password = request.getParameter("password");
 
     response.setContentType("text/html;charset=UTF-8");
     PrintWriter out = response.getWriter();
@@ -42,19 +37,32 @@ public class LoginServlet extends HttpServlet {
     out.println("  <title>비트캠프 데브옵스 5기</title>");
     out.println("</head>");
     out.println("<body>");
-    out.println("<h1>과제 관리 시스템</h1>");
-    out.println("<h2>로그인</h2>");
+    out.println("<h1>회원</h1>");
+
+    out.println("<a href='/member/form.html'>새 회원</a>");
 
     try {
-      Member member = memberDao.findByEmailAndPassword(email, password);
-      if (member != null) {
-        request.getSession().setAttribute("loginUser", member);
-        out.printf("<p>%s 님 환영합니다.</p>\n", member.getName());
-      } else {
-        out.println("<p>이메일 또는 암호가 맞지 않습니다.</p>");
+      out.println("<table border='1'>");
+      out.println("    <thead>");
+      out.println("    <tr> <th>번호</th> <th>이름</th> <th>이메일</th> <th>가입일</th> </tr>");
+      out.println("    </thead>");
+      out.println("    <tbody>");
+
+      List<Member> list = memberDao.findAll();
+
+      for (Member member : list) {
+        out.printf(
+            "<tr> <td>%d</td> <td><a href='/member/view?no=%1$d'>%s</a></td> <td>%s</td> <td>%s</td> </tr>\n",
+            member.getNo(),
+            member.getName(),
+            member.getEmail(),
+            member.getCreatedDate());
       }
+      out.println("    </tbody>");
+      out.println("</table>");
+
     } catch (Exception e) {
-      out.println("<p>로그인 오류!</p>");
+      out.println("<p>목록 오류!</p>");
       out.println("<pre>");
       e.printStackTrace(out);
       out.println("</pre>");

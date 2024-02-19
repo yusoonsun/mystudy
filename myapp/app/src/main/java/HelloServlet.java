@@ -15,9 +15,8 @@ public class HelloServlet implements Servlet {
   }
 
   @Override
-  public void init(ServletConfig config) throws ServletException {
+  public void init(ServletConfig servletConfig) throws ServletException {
     System.out.println("HelloServlet: init() 호출됨!");
-
   }
 
   @Override

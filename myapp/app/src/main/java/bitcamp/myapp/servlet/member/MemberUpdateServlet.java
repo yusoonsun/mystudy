@@ -1,4 +1,4 @@
-package bitcamp.myapp.servlet.auth;
+package bitcamp.myapp.servlet.member;
 
 import bitcamp.myapp.dao.MemberDao;
 import bitcamp.myapp.dao.mysql.MemberDaoImpl;
@@ -6,19 +6,16 @@ import bitcamp.myapp.vo.Member;
 import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/auth/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/member/update")
+public class MemberUpdateServlet extends HttpServlet {
 
-  MemberDao memberDao;
+  private MemberDao memberDao;
 
   @Override
   public void init() {
@@ -28,9 +25,6 @@ public class LoginServlet extends HttpServlet {
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-
-    String email = request.getParameter("email");
-    String password = request.getParameter("password");
 
     response.setContentType("text/html;charset=UTF-8");
     PrintWriter out = response.getWriter();
@@ -42,19 +36,31 @@ public class LoginServlet extends HttpServlet {
     out.println("  <title>비트캠프 데브옵스 5기</title>");
     out.println("</head>");
     out.println("<body>");
-    out.println("<h1>과제 관리 시스템</h1>");
-    out.println("<h2>로그인</h2>");
+    out.println("<h1>회원</h1>");
 
     try {
-      Member member = memberDao.findByEmailAndPassword(email, password);
-      if (member != null) {
-        request.getSession().setAttribute("loginUser", member);
-        out.printf("<p>%s 님 환영합니다.</p>\n", member.getName());
-      } else {
-        out.println("<p>이메일 또는 암호가 맞지 않습니다.</p>");
+      int no = Integer.parseInt(request.getParameter("no"));
+
+      Member old = memberDao.findBy(no);
+      if (old == null) {
+        out.println("<p>회원 번호가 유효하지 않습니다.</p>");
+        out.println("</body>");
+        out.println("</html>");
+        return;
       }
+
+      Member member = new Member();
+      member.setNo(old.getNo());
+      member.setEmail(request.getParameter("email"));
+      member.setName(request.getParameter("name"));
+      member.setPassword(request.getParameter("password"));
+      member.setCreatedDate(old.getCreatedDate());
+
+      memberDao.update(member);
+      out.println("<p>회원을 변경했습니다.</p>");
+
     } catch (Exception e) {
-      out.println("<p>로그인 오류!</p>");
+      out.println("<p>회원 변경 오류!</p>");
       out.println("<pre>");
       e.printStackTrace(out);
       out.println("</pre>");

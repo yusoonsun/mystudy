@@ -1,36 +1,32 @@
-package bitcamp.myapp.servlet.auth;
+package bitcamp.myapp.servlet.assignment;
 
-import bitcamp.myapp.dao.MemberDao;
-import bitcamp.myapp.dao.mysql.MemberDaoImpl;
-import bitcamp.myapp.vo.Member;
+import bitcamp.myapp.dao.AssignmentDao;
+import bitcamp.myapp.dao.mysql.AssignmentDaoImpl;
+import bitcamp.myapp.vo.Assignment;
 import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.GenericServlet;
+import java.sql.Date;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/auth/login")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/assignment/add")
+public class AssignmentAddServlet extends HttpServlet {
 
-  MemberDao memberDao;
+  private AssignmentDao assignmentDao;
 
   @Override
   public void init() {
-    this.memberDao = (MemberDao) this.getServletContext().getAttribute("memberDao");
+    assignmentDao = (AssignmentDao) this.getServletContext().getAttribute("assignmentDao");
   }
 
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-
-    String email = request.getParameter("email");
-    String password = request.getParameter("password");
 
     response.setContentType("text/html;charset=UTF-8");
     PrintWriter out = response.getWriter();
@@ -42,19 +38,20 @@ public class LoginServlet extends HttpServlet {
     out.println("  <title>비트캠프 데브옵스 5기</title>");
     out.println("</head>");
     out.println("<body>");
-    out.println("<h1>과제 관리 시스템</h1>");
-    out.println("<h2>로그인</h2>");
+    out.println("<h1>과제</h1>");
 
     try {
-      Member member = memberDao.findByEmailAndPassword(email, password);
-      if (member != null) {
-        request.getSession().setAttribute("loginUser", member);
-        out.printf("<p>%s 님 환영합니다.</p>\n", member.getName());
-      } else {
-        out.println("<p>이메일 또는 암호가 맞지 않습니다.</p>");
-      }
+      Assignment assignment = new Assignment();
+      assignment.setTitle(request.getParameter("title"));
+      assignment.setContent(request.getParameter("content"));
+      assignment.setDeadline(Date.valueOf(request.getParameter("deadline")));
+
+      assignmentDao.add(assignment);
+
+      out.println("<p>과제를 등록했습니다.</p>");
+
     } catch (Exception e) {
-      out.println("<p>로그인 오류!</p>");
+      out.println("<p>과제 등록 오류!</p>");
       out.println("<pre>");
       e.printStackTrace(out);
       out.println("</pre>");
