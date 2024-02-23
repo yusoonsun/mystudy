@@ -1,13 +1,10 @@
 package bitcamp.myapp.servlet.assignment;
 
 import bitcamp.myapp.dao.AssignmentDao;
-import bitcamp.myapp.dao.mysql.AssignmentDaoImpl;
 import bitcamp.myapp.vo.Assignment;
-import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,7 +22,7 @@ public class AssignmentAddServlet extends HttpServlet {
   }
 
   @Override
-  protected void service(HttpServletRequest request, HttpServletResponse response)
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
     response.setContentType("text/html;charset=UTF-8");
@@ -48,7 +45,8 @@ public class AssignmentAddServlet extends HttpServlet {
 
       assignmentDao.add(assignment);
 
-      out.println("<p>과제를 등록했습니다.</p>");
+      response.sendRedirect("/assignment/list");
+      return;
 
     } catch (Exception e) {
       out.println("<p>과제 등록 오류!</p>");

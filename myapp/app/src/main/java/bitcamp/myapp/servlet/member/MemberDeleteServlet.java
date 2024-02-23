@@ -1,8 +1,6 @@
 package bitcamp.myapp.servlet.member;
 
 import bitcamp.myapp.dao.MemberDao;
-import bitcamp.myapp.dao.mysql.MemberDaoImpl;
-import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -22,7 +20,7 @@ public class MemberDeleteServlet extends HttpServlet {
   }
 
   @Override
-  protected void service(HttpServletRequest request, HttpServletResponse response)
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
     response.setContentType("text/html;charset=UTF-8");
@@ -42,8 +40,10 @@ public class MemberDeleteServlet extends HttpServlet {
 
       if (memberDao.delete(no) == -1) {
         out.println("<p>회원 번호가 유효하지 않습니다.</p>");
+        response.setHeader("Refresh", "1;url=list");
       } else {
-        out.println("<p>회원을 삭제했습니다.</p>");
+        response.sendRedirect("list");
+        return;
       }
 
     } catch (Exception e) {

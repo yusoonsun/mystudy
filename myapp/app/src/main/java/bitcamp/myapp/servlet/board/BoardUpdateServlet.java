@@ -2,12 +2,9 @@ package bitcamp.myapp.servlet.board;
 
 import bitcamp.myapp.dao.AttachedFileDao;
 import bitcamp.myapp.dao.BoardDao;
-import bitcamp.myapp.dao.mysql.AttachedFileDaoImpl;
-import bitcamp.myapp.dao.mysql.BoardDaoImpl;
 import bitcamp.myapp.vo.AttachedFile;
 import bitcamp.myapp.vo.Board;
 import bitcamp.myapp.vo.Member;
-import bitcamp.util.DBConnectionPool;
 import bitcamp.util.TransactionManager;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -34,7 +31,7 @@ public class BoardUpdateServlet extends HttpServlet {
   }
 
   @Override
-  protected void service(HttpServletRequest request, HttpServletResponse response)
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
     int category = Integer.valueOf(request.getParameter("category"));
@@ -106,7 +103,8 @@ public class BoardUpdateServlet extends HttpServlet {
 
       txManager.commit();
 
-      out.println("<p>변경했습니다.</p>");
+      response.sendRedirect("/board/list?category=" + category);
+      return;
 
     } catch (Exception e) {
       try {

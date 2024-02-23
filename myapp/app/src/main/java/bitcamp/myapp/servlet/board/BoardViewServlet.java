@@ -2,12 +2,8 @@ package bitcamp.myapp.servlet.board;
 
 import bitcamp.myapp.dao.AttachedFileDao;
 import bitcamp.myapp.dao.BoardDao;
-import bitcamp.myapp.dao.mysql.AttachedFileDaoImpl;
-import bitcamp.myapp.dao.mysql.BoardDaoImpl;
 import bitcamp.myapp.vo.AttachedFile;
 import bitcamp.myapp.vo.Board;
-import bitcamp.util.DBConnectionPool;
-import bitcamp.util.TransactionManager;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -31,7 +27,7 @@ public class BoardViewServlet extends HttpServlet {
   }
 
   @Override
-  protected void service(HttpServletRequest request, HttpServletResponse response)
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
     int category = Integer.valueOf(request.getParameter("category"));
@@ -62,7 +58,7 @@ public class BoardViewServlet extends HttpServlet {
 
       List<AttachedFile> files = attachedFileDao.findAllByBoardNo(no);
 
-      out.println("<form action='/board/update'>");
+      out.println("<form action='/board/update' method='post'>");
       out.printf("<input name='category' type='hidden' value='%d'>\n", category);
       out.println("<div>");
       out.printf("  번호: <input readonly name='no' type='text' value='%d'>\n", board.getNo());
@@ -90,7 +86,7 @@ public class BoardViewServlet extends HttpServlet {
         out.println("  </ul>");
         out.println("</div>");
       }
-      
+
       out.println("<div>");
       out.println("  <button>변경</button>");
       out.printf("  <a href='/board/delete?category=%d&no=%d'>[삭제]</a>\n", category, no);

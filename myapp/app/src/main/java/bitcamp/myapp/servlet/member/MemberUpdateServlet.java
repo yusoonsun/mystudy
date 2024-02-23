@@ -1,9 +1,7 @@
 package bitcamp.myapp.servlet.member;
 
 import bitcamp.myapp.dao.MemberDao;
-import bitcamp.myapp.dao.mysql.MemberDaoImpl;
 import bitcamp.myapp.vo.Member;
-import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -23,7 +21,7 @@ public class MemberUpdateServlet extends HttpServlet {
   }
 
   @Override
-  protected void service(HttpServletRequest request, HttpServletResponse response)
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
     response.setContentType("text/html;charset=UTF-8");
@@ -57,7 +55,8 @@ public class MemberUpdateServlet extends HttpServlet {
       member.setCreatedDate(old.getCreatedDate());
 
       memberDao.update(member);
-      out.println("<p>회원을 변경했습니다.</p>");
+      response.sendRedirect("list");
+      return;
 
     } catch (Exception e) {
       out.println("<p>회원 변경 오류!</p>");

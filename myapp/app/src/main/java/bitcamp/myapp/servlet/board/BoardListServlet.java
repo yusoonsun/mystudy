@@ -1,11 +1,7 @@
 package bitcamp.myapp.servlet.board;
 
-import bitcamp.myapp.dao.AttachedFileDao;
 import bitcamp.myapp.dao.BoardDao;
-import bitcamp.myapp.dao.mysql.BoardDaoImpl;
 import bitcamp.myapp.vo.Board;
-import bitcamp.util.DBConnectionPool;
-import bitcamp.util.TransactionManager;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -44,7 +40,7 @@ public class BoardListServlet extends GenericServlet {
     out.println("<body>");
     out.printf("<h1>%s</h1>\n", title);
 
-    out.printf("<a href='/board/form?category=%d'>새 글</a>\n", category);
+    out.printf("<a href='/board/add?category=%d'>새 글</a>\n", category);
 
     try {
       out.println("<table border='1'>");

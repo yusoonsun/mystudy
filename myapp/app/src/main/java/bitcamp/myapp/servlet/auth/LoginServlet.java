@@ -1,15 +1,10 @@
 package bitcamp.myapp.servlet.auth;
 
 import bitcamp.myapp.dao.MemberDao;
-import bitcamp.myapp.dao.mysql.MemberDaoImpl;
 import bitcamp.myapp.vo.Member;
-import bitcamp.util.DBConnectionPool;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.GenericServlet;
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -26,7 +21,7 @@ public class LoginServlet extends HttpServlet {
   }
 
   @Override
-  protected void service(HttpServletRequest request, HttpServletResponse response)
+  protected void doPost(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
     String email = request.getParameter("email");
@@ -50,8 +45,10 @@ public class LoginServlet extends HttpServlet {
       if (member != null) {
         request.getSession().setAttribute("loginUser", member);
         out.printf("<p>%s 님 환영합니다.</p>\n", member.getName());
+        response.setHeader("Refresh", "1;url=/index.html");
       } else {
         out.println("<p>이메일 또는 암호가 맞지 않습니다.</p>");
+        response.setHeader("Refresh", "1;url=/auth/form.html");
       }
     } catch (Exception e) {
       out.println("<p>로그인 오류!</p>");

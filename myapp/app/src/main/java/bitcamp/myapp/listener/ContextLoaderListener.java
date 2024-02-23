@@ -23,6 +23,7 @@ public class ContextLoaderListener implements ServletContextListener {
   @Override
   public void contextInitialized(ServletContextEvent sce) {
     System.out.println("웹애플리케이션 자원 준비!");
+
     // DB 커넥션, DAO, 트랜잭션 관리자 생성
     DBConnectionPool connectionPool = new DBConnectionPool(
         "jdbc:mysql://localhost/studydb", "study", "Bitcamp!@#123");
@@ -40,7 +41,5 @@ public class ContextLoaderListener implements ServletContextListener {
     웹애플리케이션저장소.setAttribute("boardDao", boardDao);
     웹애플리케이션저장소.setAttribute("attachedFileDao", attachedFileDao);
     웹애플리케이션저장소.setAttribute("txManager", txManager);
-
   }
-
 }
