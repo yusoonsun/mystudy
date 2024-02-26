@@ -30,35 +30,34 @@ public class BoardViewServlet extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-    int category = Integer.valueOf(request.getParameter("category"));
-    String title = category == 1 ? "게시글" : "가입인사";
-
-    response.setContentType("text/html;charset=UTF-8");
-    PrintWriter out = response.getWriter();
-
-    out.println("<!DOCTYPE html>");
-    out.println("<html lang='en'>");
-    out.println("<head>");
-    out.println("  <meta charset='UTF-8'>");
-    out.println("  <title>비트캠프 데브옵스 5기</title>");
-    out.println("</head>");
-    out.println("<body>");
-    out.printf("<h1>%s</h1>\n", title);
+    String title = "";
 
     try {
-      int no = Integer.parseInt(request.getParameter("no"));
+      int category = Integer.valueOf(request.getParameter("category"));
+      title = category == 1 ? "게시글" : "가입인사";
 
+      int no = Integer.parseInt(request.getParameter("no"));
       Board board = boardDao.findBy(no);
       if (board == null) {
-        out.println("<p>번호가 유효하지 않습니다.</p>");
-        out.println("</body>");
-        out.println("</html>");
-        return;
+        throw new Exception("번호가 유효하지 않습니다.");
       }
-
       List<AttachedFile> files = attachedFileDao.findAllByBoardNo(no);
 
-      out.println("<form action='/board/update' method='post'>");
+      response.setContentType("text/html;charset=UTF-8");
+      PrintWriter out = response.getWriter();
+
+      out.println("<!DOCTYPE html>");
+      out.println("<html lang='en'>");
+      out.println("<head>");
+      out.println("  <meta charset='UTF-8'>");
+      out.println("  <title>비트캠프 데브옵스 5기</title>");
+      out.println("</head>");
+      out.println("<body>");
+
+      request.getRequestDispatcher("/header").include(request, response);
+
+      out.printf("<h1>%s</h1>\n", title);
+      out.println("<form action='/board/update' method='post' enctype='multipart/form-data'>");
       out.printf("<input name='category' type='hidden' value='%d'>\n", category);
       out.println("<div>");
       out.printf("  번호: <input readonly name='no' type='text' value='%d'>\n", board.getNo());
@@ -78,7 +77,8 @@ public class BoardViewServlet extends HttpServlet {
         out.println("  첨부파일: <input multiple name='files' type='file'>");
         out.println("  <ul>");
         for (AttachedFile file : files) {
-          out.printf("    <li>%s <a href='/board/file/delete?category=%d&no=%d'>삭제</a></li>\n",
+          out.printf(
+              "    <li><a href='/upload/board/%s'>%1$s</a> [<a href='/board/file/delete?category=%d&no=%d'>삭제</a>]</li>\n",
               file.getFilePath(),
               category,
               file.getNo());
@@ -93,14 +93,15 @@ public class BoardViewServlet extends HttpServlet {
       out.println("</div>");
       out.println("</form>");
 
-    } catch (Exception e) {
-      out.println("<p>조회 오류!</p>");
-      out.println("<pre>");
-      e.printStackTrace(out);
-      out.println("</pre>");
-    }
+      request.getRequestDispatcher("/footer").include(request, response);
 
-    out.println("</body>");
-    out.println("</html>");
+      out.println("</body>");
+      out.println("</html>");
+
+    } catch (Exception e) {
+      request.setAttribute("message", String.format("%s 조회 오류!", title));
+      request.setAttribute("exception", e);
+      request.getRequestDispatcher("/error").forward(request, response);
+    }
   }
 }
