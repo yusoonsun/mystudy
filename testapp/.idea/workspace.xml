@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d728cd7e-7536-4818-b4a7-075c28fd5bc1" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/mystudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/menu/AbstractMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/menu/AbstractMenuHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/menu/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/menu/MenuGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/menu/MenuHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/menu/MenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/ClientApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/dao/DaoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/dao/TripspotDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/dao/mysql/TripspotDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/handler/tripspot/TripspotAddHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/handler/tripspot/TripspotDeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/handler/tripspot/TripspotListHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/handler/tripspot/TripspotModifyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/handler/tripspot/TripspotViewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/myapp/vo/Tripspot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/util/AnsiEscape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/global/util/Prompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/global/app/MessageUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/groovy/global.java-application-conventions.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/groovy/global.java-common-conventions.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/groovy/global.java-library-conventions.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/src/main/java/global/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/src/test/java/global/list/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/src/main/java/global/utilities/JoinUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/src/main/java/global/utilities/SplitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/src/main/java/global/utilities/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/ClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/dao/BoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/dao/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/vo/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app/src/main/java/bitcamp/myapp/vo/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testapp" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testapp" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testapp" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="testapp" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2blzFdbxzyb1MIu3e8wVS6kqARe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.testapp [run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/gram16/git/mystudy/servlet-app",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="testapp [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.testapp [run]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="d728cd7e-7536-4818-b4a7-075c28fd5bc1" name="변경" comment="" />
+      <created>1706804350225</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706804350225</updated>
+    </task>
+    <servers />
+  </component>
+</project>
