@@ -48,7 +48,7 @@ pageContext.setAttribute("s4", "윤봉길");
 <%--
 jsp:useBean 문법:
 
-<jsp:useBean id="레퍼런스명" type="레퍼런스타입" scope="보관소"/>
+]
 => id
    - 보관소에서 값을 꺼낼 때 사용하는 이름이다.
    - 또한 꺼내 값을 저장하는 변수의 이름으로 사용된다.

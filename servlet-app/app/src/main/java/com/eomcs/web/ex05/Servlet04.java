@@ -1,4 +1,3 @@
-// HTTP 프로토콜 다루기 - MyHttpServlet 클래스를 활용하기
 package com.eomcs.web.ex05;
 
 import java.io.IOException;
@@ -25,7 +24,6 @@ public class Servlet04 extends HttpServlet {
       throws ServletException, IOException {
     response.setContentType("text/plain;charset=UTF-8");
     PrintWriter out = response.getWriter();
-    out.println("POST 요청입니다.");
+    out.println("Post 요청입니다.");
   }
 }
-

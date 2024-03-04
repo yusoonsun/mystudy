@@ -1,4 +1,3 @@
-// HTTP 프로토콜 다루기 - MyHttpServlet 클래스를 활용하기
 package com.eomcs.web.ex05;
 
 import java.io.IOException;
@@ -11,14 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/ex05/s2")
 public class Servlet02 extends MyHttpServlet {
 
-  private static final long serialVersionUID = 1L;
-
   @Override
   protected void service(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-    // 테스트
-    // - http://localhost:8080/web/ex05/test02.html 실행
-    //
+
     response.setContentType("text/plain;charset=UTF-8");
     PrintWriter out = response.getWriter();
 
@@ -31,7 +26,5 @@ public class Servlet02 extends MyHttpServlet {
     } else {
       out.println("이 서블릿이 다루지 못하는 요청 방식입니다.");
     }
-
   }
 }
-
