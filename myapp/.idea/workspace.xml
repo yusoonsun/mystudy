@@ -5,101 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a84827e7-6d13-4c5e-bb9d-79b24217473a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/myapp/dao/AttachedFileDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/myapp/dao/mysql/AttachedFileDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/myapp/vo/AttachedFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/util/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/util/ConnectionProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/util/DBConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../camping-app/app/src/main/java/camping/util/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/auth/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/auth/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardFileDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberAddController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberDeleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/filter/CharacterEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/assignment/form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/assignment/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/assignment/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/auth/form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/auth/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/board/form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/board/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/board/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/member/form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/member/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/member/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/webapp/upload/1b023da8-af58-42fe-ae47-ce1fec7006aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex06/Servlet05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex08/Servlet01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex08/Servlet02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex08/Servlet03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex08/Servlet100.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex09/Servlet01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex09/Servlet02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex09/Servlet11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex09/Servlet12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet23.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex10/Servlet24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet14.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet32.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex11/Servlet33.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex12/Listener01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex12/Servlet01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex12/Servlet02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex12/Servlet03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/upload/0c0d40db-aec1-400a-88d5-b38c135788f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-basic/app/doc/modeling/model3.exerd" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/doc/modeling/camping.exerd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AssignmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/RequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/RequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/MyHttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/MyHttpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/MyHttpServlet2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/MyHttpServlet2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/Servlet02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/Servlet02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/Servlet03.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/Servlet03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/Servlet04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex05/Servlet04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex06/Servlet01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex06/Servlet01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex06/Servlet04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/java/com/eomcs/web/ex06/Servlet04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentAddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentDeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentUpdateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/assignment/AssignmentViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/auth/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/auth/LogoutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardAddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardDeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardFileDeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardUpdateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/board/BoardViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberAddController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberDeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberUpdateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/member/MemberViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/ErrorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/FooterServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/HeaderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/HomeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/assignment/AssignmentAddServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/assignment/AssignmentDeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/assignment/AssignmentListServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/assignment/AssignmentUpdateServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/assignment/AssignmentViewServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/auth/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/auth/LogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/board/BoardAddServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/board/BoardDeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/board/BoardFileDeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/board/BoardListServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/board/BoardUpdateServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/board/BoardViewServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/member/MemberAddServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/member/MemberDeleteServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/member/MemberListServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/member/MemberUpdateServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/member/MemberViewServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/webapp/assignment/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/webapp/assignment/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/el/ex03.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/el/ex03.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/el/ex05.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/el/ex05.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/jstl/ex06.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../servlet-app/app/src/main/webapp/jstl/ex06.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,8 +123,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -193,9 +154,11 @@
     &quot;Gradle.myapp [classes].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp [run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp 빌드.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:DaoTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:QueueTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.myapp:app [:app:ScoreTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:StackTest.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app [:app:Test.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.myapp:app-api [build].executor&quot;: &quot;Run&quot;,
@@ -216,7 +179,8 @@
     &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;애플리케이션.ScoreTest.executor&quot;: &quot;Run&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -236,14 +200,27 @@
       <recent name="$PROJECT_DIR$/app/temp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bitcamp.myapp.servlet" />
+      <recent name="bitcamp.myapp.controller.assignment" />
       <recent name="bitcamp.myapp.controller.board" />
       <recent name="bitcamp.myapp.controller.auth" />
-      <recent name="bitcamp.myapp.controller.assignment" />
       <recent name="bitcamp.myapp.controller.member" />
-      <recent name="bitcamp.myapp.controller" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.myapp [run]">
+    <configuration name="ScoreTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bitcamp.myapp.servlet.ScoreTest" />
+      <module name="myapp.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bitcamp.myapp.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -311,10 +288,12 @@
     <list>
       <item itemvalue="Gradle.myapp [run]" />
       <item itemvalue="Gradle.myapp [build]" />
+      <item itemvalue="애플리케이션.ScoreTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.myapp [run]" />
+        <item itemvalue="애플리케이션.ScoreTest" />
         <item itemvalue="Gradle.myapp [build]" />
       </list>
     </recent_temporary>
