@@ -11,6 +11,13 @@
     <!-- 애노테이션을 처리할 도우미 객체를 등록한다. -->
     <context:annotation-config/>
     
+    <!-- 위으 태그는 애노테이션을 처리할 객체들을 생성하는 다음 코드와 같다. -->
+    <!-- 
+    <bean class = "org.springframework.context.annotation.ConfigurationClassPostProcessor"></bean>
+    <bean class = "org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+    <bean class = "org.springframework.context.event.EventListenerMethodProcessor"></bean>
+    <bean class = "org.springframework.context.event.DefaultEventListenerFactory"></bean>
+     -->
     <!-- 객체를 생성하기 위해 bean 태그를 사용하지 않고도
          객체를 자동 생성할 수 있다.
          방법은?

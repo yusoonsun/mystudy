@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a84827e7-6d13-4c5e-bb9d-79b24217473a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex01/b/Exam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex01/b/Exam01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex02/d/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex02/d/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex04/e/Exam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex04/e/Exam01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex07/c/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex07/c/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/a/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/a/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c1/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c1/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c2/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c2/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c2/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c2/B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c2/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/c2/C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/e/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/e/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/f/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/f/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/f/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/f/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/h/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex08/h/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex09/a/Exam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex09/a/Exam01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex09/a/application-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex09/a/application-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex10/a/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex10/a/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex10/b/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-basic/app/src/main/java/com/eomcs/spring/ioc/ex10/b/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AboutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AboutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AssignmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AssignmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/CookieValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/RequestMapping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/controller/RequestParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/filter/CharacterEncodingFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/listener/ContextLoaderListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/DispatcherServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/servlet/RequestHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/config/app-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/config/app-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/webapp/board/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/webapp/board/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/webapp/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/webapp/board/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,43 +110,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Gradle.myapp [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp [run].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app [:app:App.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app [:app:DaoTest.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app [:app:QueueTest.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app [:app:ScoreTest.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app [:app:StackTest.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app [:app:Test.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-api [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-client [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-client [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-client [run].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-common [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-common [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-server [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.myapp:app-server [run].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app/src/main/java/bitcamp/myapp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eomjinyoung/git/bitcamp-study/myapp/app/src/main/webapp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;애플리케이션.ScoreTest.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.myapp [build].executor": "Run",
+    "Gradle.myapp [classes].executor": "Run",
+    "Gradle.myapp [clean].executor": "Run",
+    "Gradle.myapp [run].executor": "Run",
+    "Gradle.myapp 빌드.executor": "Run",
+    "Gradle.myapp:app [:app:App.main()].executor": "Run",
+    "Gradle.myapp:app [:app:DaoTest.main()].executor": "Run",
+    "Gradle.myapp:app [:app:QueueTest.main()].executor": "Run",
+    "Gradle.myapp:app [:app:ScoreTest.main()].executor": "Run",
+    "Gradle.myapp:app [:app:StackTest.main()].executor": "Run",
+    "Gradle.myapp:app [:app:Test.main()].executor": "Run",
+    "Gradle.myapp:app-api [build].executor": "Run",
+    "Gradle.myapp:app-client [build].executor": "Run",
+    "Gradle.myapp:app-client [classes].executor": "Run",
+    "Gradle.myapp:app-client [run].executor": "Run",
+    "Gradle.myapp:app-common [build].executor": "Run",
+    "Gradle.myapp:app-common [classes].executor": "Run",
+    "Gradle.myapp:app-server [build].executor": "Run",
+    "Gradle.myapp:app-server [run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/eomjinyoung/git/bitcamp-study/myapp/app/src/main/java/bitcamp/myapp",
+    "last_opened_file_path": "C:/Users/gram16/git/mystudy/mvc-app",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "애플리케이션.ScoreTest.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/webapp" />

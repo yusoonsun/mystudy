@@ -1,7 +1,6 @@
 package com.eomcs.spring.ioc.ex08.h;
 
 import java.sql.Date;
-import javax.annotation.Resource;
 
 // 의존 객체 Engine 주입 - @Autowired + @Qualifier = @Resource
 public class Car {
@@ -17,7 +16,7 @@ public class Car {
   // => 따로 라이브러리를 다운로드 받아 포함시켜야 한다.
   // => search.maven.org 에서 'javax.annotation'으로 검색하라.
   //    1.3.2 이상의 버전 사용.
-  @Resource(name = "e1")
+  //@Resource(name = "e1")
   //  @Autowired
   //  @Qualifier("e1")
   private Engine engine;
