@@ -1,4 +1,3 @@
-// request handler를 구분하는 방법 - Accept 요청 헤더의 값에 따라 구분하기
 package bitcamp.app1;
 
 import org.springframework.stereotype.Controller;
@@ -28,10 +27,11 @@ public class Controller03_3 {
     return "{\"title\":\"text\"}";
   }
 
-  @GetMapping("csv")
+
+  @GetMapping(produces = "text/plain")
   @ResponseBody
-  public String csv() {
-    return "1,hong,20,female";
+  public String handler1() {
+    return "text";
   }
 
   @GetMapping(produces = "text/html")
@@ -55,6 +55,6 @@ public class Controller03_3 {
   @GetMapping
   @ResponseBody
   public String handler5() {
-    return "handler5";
+    return "other...";
   }
 }

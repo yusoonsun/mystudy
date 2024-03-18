@@ -1,4 +1,3 @@
-// request handler를 구분하는 방법 - 요청 헤더 이름으로 구분하기
 package bitcamp.app1;
 
 import org.springframework.stereotype.Controller;
@@ -10,15 +9,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/c03_2")
 public class Controller03_2 {
-
-  // @GetMapping(headers="name")
   @RequestMapping(method = RequestMethod.GET, headers = "name")
   @ResponseBody
   public String handler1() {
     return "handler1";
   }
 
-  // @GetMapping(headers="age")
   @RequestMapping(method = RequestMethod.GET, headers = "age")
   @ResponseBody
   public String handler2() {

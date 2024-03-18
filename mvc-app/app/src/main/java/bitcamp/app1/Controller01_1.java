@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class Controller01_1 {
 
   //@RequestMapping // 이 애노테이션을 붙여서 요청이 들어왔을 때 호출될 메서드임을 표시한다.
-  @ResponseBody // 그냥 클라이언트 리턴 해
+  @ResponseBody
   public String handler() {
     return "c01_1 -> handler()";
   }
